@@ -1,0 +1,956 @@
+{
+    "liam@thercsgroup.co.za": {
+        "name": "Liam",
+        "company": "CLicks",
+        "phone": "0764121438",
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 4000,
+        "estimated_minutes": 200,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice",
+        "cost_details": {
+            "final_monthly_cost_zar": 89666.99999999999,
+            "total_monthly_cost_zar": 104166.99999999999,
+            "total_monthly_cost": 104166.99999999999,
+            "total_setup_cost_zar": 55200,
+            "total_setup_cost": 55200.0,
+            "overall_total_cost_zar": 1305203.9999999998,
+            "overall_total_cost": 1305203.9999999998,
+            "included_msgs_after_conversion": 60000,
+            "included_mins_after_conversion": 6000,
+            "extra_msgs_per_assistant": 15000,
+            "extra_mins_per_assistant": 1500,
+            "whitelabel_fee_zar": 14500,
+            "custom_voices_cost_zar": 0,
+            "additional_languages_cost_zar": 0,
+            "additional_use_case_cost_zar": 0,
+            "setup_fee_zar": 45600,
+            "setup_cost_assistants_zar": 0,
+            "setup_hours_cost_zar": 9600,
+            "extra_messages_used": 0,
+            "extra_minutes_used": 0,
+            "extra_msg_cost_zar": 0.0,
+            "extra_min_cost_zar": 0.0,
+            "maintenance_hours": 6,
+            "maintenance_hourly_rate": 400,
+            "maintenance_cost_zar": 2400
+        }
+    },
+    "mel@clicks.co.za": {
+        "name": "Mel van Rooy",
+        "company": "Clicks Group",
+        "phone": "0764121438",
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 0,
+        "estimated_minutes": 7200000,
+        "desired_agents": 1,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Just Minutes",
+        "cost_details": {
+            "final_monthly_cost_zar": 18521831.630999997,
+            "total_monthly_cost_zar": 18536331.630999997,
+            "total_monthly_cost": 18536331.630999997,
+            "total_setup_cost_zar": 45600,
+            "total_setup_cost": 45600.0,
+            "overall_total_cost_zar": 222481579.57199997,
+            "overall_total_cost": 222481579.57199997,
+            "included_msgs_after_conversion": 0,
+            "included_mins_after_conversion": 7081,
+            "extra_msgs_per_assistant": 15000,
+            "extra_mins_per_assistant": 1500,
+            "whitelabel_fee_zar": 14500,
+            "custom_voices_cost_zar": 0,
+            "additional_languages_cost_zar": 0,
+            "additional_use_case_cost_zar": 0,
+            "setup_fee_zar": 45600,
+            "setup_cost_assistants_zar": 0,
+            "extra_messages_used": 0,
+            "extra_minutes_used": 7194000,
+            "extra_msg_cost_zar": 0.0,
+            "extra_min_cost_zar": 17985000.0
+        }
+    },
+    "REF646060": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF237915": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF766782": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF274787": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 3,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF901907": {
+        "assigned_plan": "Basic",
+        "estimated_messages": 50,
+        "estimated_minutes": 30.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF462883": {
+        "assigned_plan": "Basic",
+        "estimated_messages": 50,
+        "estimated_minutes": 30.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice",
+        "cost_details": {
+            "final_monthly_cost_zar": 10528.8,
+            "total_monthly_cost_zar": 25028.8,
+            "total_monthly_cost": 25028.8,
+            "total_setup_cost_zar": 18100,
+            "total_setup_cost": 18100.0,
+            "overall_total_cost_zar": 318445.6,
+            "overall_total_cost": 318445.6,
+            "included_msgs_after_conversion": 5000,
+            "included_mins_after_conversion": 300,
+            "extra_msgs_per_assistant": 0,
+            "extra_mins_per_assistant": 0,
+            "whitelabel_fee_zar": 14500,
+            "custom_voices_cost_zar": 0,
+            "additional_languages_cost_zar": 0,
+            "additional_use_case_cost_zar": 0,
+            "setup_fee_zar": 7800,
+            "setup_cost_assistants_zar": 7800,
+            "setup_hours_cost_zar": 2500,
+            "extra_messages_used": 0,
+            "extra_minutes_used": 0,
+            "extra_msg_cost_zar": 0.0,
+            "extra_min_cost_zar": 0.0,
+            "maintenance_hours": 2,
+            "maintenance_hourly_rate": 300,
+            "maintenance_cost_zar": 600
+        }
+    },
+    "REF556654": {
+        "assigned_plan": "Basic",
+        "estimated_messages": 50,
+        "estimated_minutes": 30.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF947191": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF435580": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF856160": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF368051": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 2,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF553641": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 2,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF274367": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 2,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF998663": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 0,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 3,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF840577": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 3,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF175264": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF542271": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF457596": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF919005": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF680216": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF464848": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF948232": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF920716": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF237533": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF927425": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF722501": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 7150.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF940574": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 0,
+        "estimated_minutes": 7150.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF479192": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 0,
+        "estimated_minutes": 7150.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF374585": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF485044": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF667435": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Just Minutes"
+    },
+    "REF299116": {
+        "assigned_plan": "Basic",
+        "estimated_messages": 60,
+        "estimated_minutes": 50.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF491163": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF565319": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 12500.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF672385": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 15000.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF463007": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 12000.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF914898": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 12000.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF743921": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 60000,
+        "estimated_minutes": 11600.0,
+        "desired_agents": 3,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF530048": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF274056": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF193619": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF870712": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF270845": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF235289": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF262590": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF548149": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF806652": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF378887": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF454315": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF975686": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF818188": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF342353": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 1900000,
+        "estimated_minutes": 100000.0,
+        "desired_agents": 1,
+        "crm_choice": "Your Own CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF386885": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF561680": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF939375": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF858309": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF150534": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF889430": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF755298": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF828546": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF802067": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF500375": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF521311": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF714229": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF244920": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF676466": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF803937": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF482638": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF974407": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF572299": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF509982": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF451319": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF626999": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF736889": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF615958": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF580151": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF322220": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF846900": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 1,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF320801": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF742540": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF938506": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF286683": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF428495": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF945046": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF575165": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF182867": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF913519": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF145142": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF521637": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF792485": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF146396": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF106955": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice",
+        "cost_details": {
+            "final_monthly_cost_zar": 76280.5,
+            "total_monthly_cost_zar": 76280.5,
+            "total_setup_cost_zar": 19200,
+            "overall_total_cost_zar": 934566.0,
+            "total_monthly_cost": 76280.5,
+            "total_setup_cost": 19200.0,
+            "overall_total_cost": 934566.0,
+            "included_msgs_after_conversion": 60000,
+            "included_mins_after_conversion": 6000,
+            "extra_messages_used": 0,
+            "extra_minutes_used": 0,
+            "extra_msg_cost_zar": 0.0,
+            "extra_min_cost_zar": 0.0,
+            "whitelabel_fee_zar": 0,
+            "custom_voices_cost_zar": 0,
+            "additional_languages_cost_zar": 0,
+            "setup_fee_zar": 19200,
+            "setup_cost_assistants_zar": 0,
+            "assistant_monthly_cost_zar": 0,
+            "technical_support_hours": 6,
+            "technical_support_hourly_rate": 950,
+            "technical_support_cost_zar": 5700,
+            "base_fee_zar": 45000,
+            "final_msg_cost_zar": 0.06,
+            "final_min_cost_zar": 3.33,
+            "cost_of_included_messages_zar": 3600.0,
+            "cost_of_included_minutes_zar": 19980.0,
+            "absorbed_msgs_for_assistants": 0,
+            "absorbed_mins_for_assistants": 0
+        }
+    },
+    "REF317870": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF390455": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF812597": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF725588": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF156322": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF506093": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF190950": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF503269": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF720647": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF504739": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    },
+    "REF696965": {
+        "assigned_plan": "Enterprise",
+        "estimated_messages": 15000,
+        "estimated_minutes": 1500.0,
+        "desired_agents": 0,
+        "crm_choice": "askAYYI CRM",
+        "communication_type": "Both Messages & Voice"
+    }
+}

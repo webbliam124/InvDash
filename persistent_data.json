@@ -1,0 +1,192 @@
+{
+    "Overheads": [
+        {
+            "Category": "Office Rent",
+            "BaseAmount": 50000.0,
+            "YearlyEscalation": 0.05
+        },
+        {
+            "Category": "Insurance",
+            "BaseAmount": 20000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Administration",
+            "BaseAmount": 30000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Legal",
+            "BaseAmount": 10000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Sundry",
+            "BaseAmount": 1000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Accommodation",
+            "BaseAmount": 45000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Communications",
+            "BaseAmount": 6000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Logistics",
+            "BaseAmount": 20000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Transport",
+            "BaseAmount": 30000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Sundry",
+            "BaseAmount": 12000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Category": "Purchase of Hardware",
+            "BaseAmount": 200000.0,
+            "YearlyEscalation": 0.02
+        }
+    ],
+    "Marketing": [
+        {
+            "Channel": "Digital Ads",
+            "BaseAmount": 15000.0,
+            "YearlyEscalation": 0.1
+        },
+        {
+            "Channel": "Print Media",
+            "BaseAmount": 3000.0,
+            "YearlyEscalation": 0.02
+        },
+        {
+            "Channel": "Events",
+            "BaseAmount": 5000.0,
+            "YearlyEscalation": 0.05
+        }
+    ],
+    "Inputs": {
+        "total_subs": 5,
+        "basic_share": 50,
+        "adv_share": 30,
+        "ent_share": 20,
+        "year1_growth": 20.0,
+        "year2_growth": 40.0,
+        "year3_growth": 40.0,
+        "year4_growth": 10.0,
+        "year5_growth": 10.0,
+        "year1_churn": 6.0,
+        "year2_churn": 5.0,
+        "year3_churn": 4.0,
+        "year4_churn": 3.0,
+        "year5_churn": 2.0,
+        "basic_monthly_cos": 2000.0,
+        "basic_monthly_price": 5000.0,
+        "basic_setup_cos": 1000.0,
+        "basic_setup_price": 2000.0,
+        "enable_white_label_basic": true,
+        "basic_addon_cost": 800.0,
+        "basic_addon_price": 1200.0,
+        "adv_monthly_cos": 4000.0,
+        "adv_monthly_price": 8000.0,
+        "adv_setup_cos": 2000.0,
+        "adv_setup_price": 3000.0,
+        "enable_white_label_adv": true,
+        "adv_addon_cost": 1200.0,
+        "adv_addon_price": 2000.0,
+        "ent_monthly_cos": 9000.0,
+        "ent_monthly_price": 15000.0,
+        "ent_setup_cos": 5000.0,
+        "ent_setup_price": 8000.0,
+        "enable_white_label_ent": false,
+        "ent_addon_cost": 2000.0,
+        "ent_addon_price": 3000.0,
+        "extra_assistant_enabled": true,
+        "extra_assistant_percent": 50,
+        "extra_assist_cos": 3000.0,
+        "extra_assist_rev": 5000.0,
+        "wl_percent": 53,
+        "horizon_months": 45,
+        "currency": "ZAR",
+        "corp_tax_rate": 28.0,
+        "capex_base": 20000.0,
+        "capex_escalation": 5.0,
+        "extra_assist_setup_cos": 7800.0,
+        "extra_assist_setup_price": 0.0,
+        "horizon_years": 5,
+        "investment_amount": 10000000.0,
+        "investment_percent_equity": 8.0,
+        "investment_type": "Equity",
+        "investment_payback_years": 0,
+        "company_valuation_pre_money": 100000000.0,
+        "sales_commission_rate": 0.0,
+        "onboarding_basic_hours": 12,
+        "onboarding_advanced_hours": 24,
+        "onboarding_enterprise_hours": 48,
+        "techsupport_advanced_hours": 5,
+        "techsupport_enterprise_hours": 10,
+        "service_markup_pct": 30.0
+    },
+    "FixedCosts": [
+        {
+            "Category": "Office Rental",
+            "BaseAmount": 50000.0,
+            "YearlyEscalation": 0.05
+        },
+        {
+            "Category": "Software Subscriptions",
+            "BaseAmount": 10000.0,
+            "YearlyEscalation": 0.03
+        },
+        {
+            "Category": "Administrative Overheads (Insurance, Legal, Sundry)",
+            "BaseAmount": 30000.0,
+            "YearlyEscalation": 0.05
+        }
+    ],
+    "Salaries": [
+        {
+            "Role": "New Role 1",
+            "MonthlySalary": 20000.0,
+            "NumberPeople": 1,
+            "AnnualIncreasePct": 5.0,
+            "ScalesWithClients": true
+        },
+        {
+            "Role": "New Role 2",
+            "MonthlySalary": 20000.0,
+            "NumberPeople": 1,
+            "AnnualIncreasePct": 5.0,
+            "ScalesWithClients": true
+        }
+    ],
+    "HoursPerClient": {
+        "Onboarding": {
+            "Basic": 12,
+            "Advanced": 24,
+            "Enterprise": 48
+        },
+        "TechSupportMonthly": {
+            "Advanced": 5,
+            "Enterprise": 10
+        }
+    },
+    "ScalingAndMarkup": {
+        "MarkupPercent": 30.0,
+        "HoursPerMonth": 160
+    },
+    "ClientNumbers": {
+        "BasicClients": 20,
+        "AdvancedClients": 50,
+        "EnterpriseClients": 20
+    },
+    "AnnualSalaryIncreaseAll": 5.0
+}

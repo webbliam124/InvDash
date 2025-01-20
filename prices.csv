@@ -1,0 +1,15 @@
+Name,Price,Currency,Description,SKU,Taxable,Billing Frequency,Recurring Billing,Terms,Categories/Tags
+"Basic Plan - 3-Month Commitment (Monthly)","6500","ZAR","Includes 5000 msgs & 300 mins/month. One-time setup cost: R10200 (12 hrs * 850). Billed monthly for 3 months.","BASIC-3M-M","Yes","Monthly","Yes","Minimum 3-month term, 30 days’ notice required.","Plan,Basic"
+"Basic Plan - 12-Month Commitment (Upfront)","6500","ZAR","Includes 5000 msgs & 300 mins/month. One-time setup cost: R10200 (12 hrs * 850). Billed upfront for 12 months.","BASIC-12M-U","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Basic"
+
+"Advanced Plan - 3-Month Commitment (Monthly)","15000","ZAR","Includes 10000 msgs & 500 mins/month + CRM integration. One-time setup cost: R20400 (24 hrs * 850). Billed monthly for 3 months.","ADV-3M-M","Yes","Monthly","Yes","Minimum 3-month term, 30 days’ notice required.","Plan,Advanced"
+"Advanced Plan - 12-Month Commitment (Upfront)","15000","ZAR","Includes 10000 msgs & 500 mins/month + CRM integration. One-time setup cost: R20400 (24 hrs * 850). Billed upfront for 12 months.","ADV-12M-U","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Advanced"
+
+"Enterprise Plan - 3-Month Commitment (Monthly, 1 Assistant Included)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 1 AI assistant included. One-time setup cost: R40800 (48 hrs * 850). Billed monthly for 3 months.","ENT-3M-1A","Yes","Monthly","Yes","Minimum 3-month term, 30 days’ notice required.","Plan,Enterprise"
+"Enterprise Plan - 3-Month Commitment (Monthly, 2 Assistants)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 2 total assistants. One-time setup cost: R45800 (40800 + 5000). Billed monthly for 3 months.","ENT-3M-2A","Yes","Monthly","Yes","Minimum 3-month term, 30 days’ notice required.","Plan,Enterprise"
+
+"Enterprise Plan - 12-Month Commitment (Upfront, 1 Assistant Included)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 1 AI assistant included. One-time setup cost: R40800 (48 hrs * 850). Billed upfront for 12 months.","ENT-12M-1A","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Enterprise"
+"Enterprise Plan - 12-Month Commitment (Upfront, 2 Assistants)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 2 total assistants. One-time setup cost: R45800 (40800 + 5000). Billed upfront for 12 months.","ENT-12M-2A","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Enterprise"
+
+"Enterprise Plan - 12-Month Commitment (Upfront, White-Label)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 1 assistant included, white-labelling. One-time setup cost: R56650 (40800 + 15850). Billed upfront for 12 months.","ENT-12M-1A-WL","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Enterprise,Add-On"
+"Enterprise Plan - 12-Month Commitment (Upfront, White-Label + 2 Assistants)","45000","ZAR","Includes 60000 msgs & 6000 mins/month, 2 total assistants, white-labelling. One-time setup cost: R61650 (40800 + 5000 + 15850). Billed upfront for 12 months.","ENT-12M-2A-WL","Yes","Yearly","Yes","Minimum 12-month term, payable upfront.","Plan,Enterprise,Add-On"

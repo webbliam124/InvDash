@@ -1,0 +1,18 @@
+Todo List
+
+1 - remove the extra voices and also remove the additional languages section from the entier programe but keep the White Label and 
+
+2 - Need to have all the columns in tables to be grouped with something logical, so I need 
+
+3 - For our variable staff increases, and due to the fact that the onbaording hours are going to decrease it will mean that we need to let go of staff, I need your assistance to actually help with that so it needs to project how many real staff we need vs variable staff
+
+4 - All the percentages need to be together
+
+5 - I want to show periods instead, I want to see the period instead of just saying peak clients, can you build in a section at the top right to show the time period at all times of the appilcation
+
+6 - I need a new input which is going to be how many clients we got from resellers and then because they are a reseller we need to show the  revenue for the reseller, the costs,  etc
+I need a label that says how many resellers do you want, if I say 10 then I want 10 rows for selellers like in the investment rounds section to input the following, - name of the reseller, potential impact area, percentage of impact area, years to achieve impact area and then stats based on that, a reseller needs to be shown their share, and we need to be shown our share, remember that the 30% rev share is actually on profit, and remeber that reseller product is exactly the same as what it current is in terms of basic, advanced and enterprise split and add ons etc
+
+So here is an example
+
+If I add YOCO as a reseller and they have a base of 250k clients and we say that we are going to close 10% of their client base over 5 years it means we are going to get 5k of their clients per year which means that we are going to sell in total 25k plans with a split between basic, advanced and enterprise with the top ups, whitelabel and products etc and this has its own table and is also included in the total table 

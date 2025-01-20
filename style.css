@@ -1,0 +1,111 @@
+/* -----------------
+   style.css
+   ----------------- */
+
+/* Overall App */
+.stApp {
+  background-color: #FAFAFA;
+  color: #1D1D1F;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Top tabs styling */
+div[data-testid="stTabBar"] button {
+  background-color: #F0F2F6 !important;
+  color: #4CAF50 !important;
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+div[data-testid="stTabBar"] button[data-selected="true"] {
+  border-bottom: 4px solid #4CAF50 !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #4CAF50;
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+/* Buttons */
+.stButton > button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin: 2px;
+}
+.stButton > button:hover {
+  background-color: #43A047;
+}
+
+/* Input Label */
+label {
+  color: #1D1D1F !important;
+  font-weight: bold;
+}
+
+/* Table */
+.dataframe {
+  color: #1D1D1F;
+  border-collapse: collapse;
+  width: 100%;
+}
+.dataframe th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+.dataframe td {
+  background-color: #F7F7F7;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Card-like containers */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+.card h4 {
+  color: #4CAF50;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 1.05em;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+/* Highlight chosen plan in greenish hue */
+.chosen-plan {
+  background-color: #e1fbe1 !important;
+  border: 2px solid #4CAF50 !important;
+}
+
+/* Subtle text for plan details */
+.subtle-text {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Footer styling */
+.footer-text {
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 50px;
+  color: #888;
+}

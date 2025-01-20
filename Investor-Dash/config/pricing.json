@@ -1,0 +1,133 @@
+{
+    "plans": {
+        "Basic": {
+            "base_fee": 6500,
+            "messages": 5000,
+            "voice_minutes": 300,
+            "technical_support_hours": 1,
+            "technical_support_hourly_rate": 950,
+            "base_msg_cost": 0.04,
+            "msg_markup": 2.0,
+            "base_min_cost": 2.22,
+            "min_markup": 2.0,
+            "contingency_percent": 2.5,
+            "float_cost": 140,
+            "setup_hours": 12,
+            "setup_hourly_rate": 400,
+            "limitations": {
+                "assistants": 1,
+                "use_cases": 1
+            },
+            "platforms": "All Platforms",
+            "onboarding_support_hours": 12,
+            "optional_addons": {
+                "white_label_setup": 12600,
+                "custom_voices": {
+                    "enabled": false,
+                    "cost_per_voice": 0
+                },
+                "additional_languages": {
+                    "enabled": false,
+                    "cost_per_language": 0
+                }
+            },
+            "setup_cost_per_assistant": 0,
+            "assistant_monthly_fee": 0,
+            "top_up_msg_multiplier": 1.5,
+            "top_up_min_multiplier": 1.5,
+            "crm_access": true
+        },
+        "Advanced": {
+            "base_fee": 15000,
+            "messages": 10000,
+            "voice_minutes": 500,
+            "technical_support_hours": 4,
+            "technical_support_hourly_rate": 950,
+            "base_msg_cost": 0.04,
+            "msg_markup": 2.0,
+            "base_min_cost": 2.22,
+            "min_markup": 2.0,
+            "contingency_percent": 2.5,
+            "float_cost": 140,
+            "setup_hours": 24,
+            "setup_hourly_rate": 400,
+            "limitations": {
+                "assistants": 1,
+                "use_cases": 1
+            },
+            "platforms": "All Platforms",
+            "onboarding_support_hours": 24,
+            "optional_addons": {
+                "white_label_setup": 14550,
+                "custom_voices": {
+                    "enabled": false,
+                    "cost_per_voice": 0
+                },
+                "additional_languages": {
+                    "enabled": false,
+                    "cost_per_language": 0
+                }
+            },
+            "setup_cost_per_assistant": 2000,
+            "assistant_monthly_fee": 9900,
+            "top_up_msg_multiplier": 1.0,
+            "top_up_min_multiplier": 1.0,
+            "crm_integration": true,
+            "api_integrations_fee": 9800
+        },
+        "Enterprise": {
+            "base_fee": 45000,
+            "messages": 60000,
+            "voice_minutes": 6000,
+            "technical_support_hours": 6,
+            "technical_support_hourly_rate": 950,
+            "base_msg_cost": 0.04,
+            "msg_markup": 2.0,
+            "base_min_cost": 2.22,
+            "min_markup": 2.0,
+            "contingency_percent": 2.5,
+            "float_cost": 140,
+            "setup_hours": 48,
+            "setup_hourly_rate": 400,
+            "limitations": {
+                "assistants": 1,
+                "use_cases": 1
+            },
+            "platforms": "All Platforms",
+            "onboarding_support_hours": 9,
+            "optional_addons": {
+                "white_label_setup": 0,
+                "custom_voices": {
+                    "enabled": false,
+                    "cost_per_voice": 0
+                },
+                "additional_languages": {
+                    "enabled": false,
+                    "cost_per_language": 0
+                }
+            },
+            "setup_cost_per_assistant": 1500,
+            "assistant_monthly_fee": 6500,
+            "top_up_msg_multiplier": 1.5,
+            "top_up_min_multiplier": 1.5,
+            "extra_messages_per_additional_assistant": 15000,
+            "extra_minutes_per_additional_assistant": 1500,
+            "crm_integration": true,
+            "api_integrations_fee": 9800,
+            "additional_options": {
+                "add_use_case_fee": 25000,
+                "extra_messages_per_additional_assistant": 15000,
+                "extra_minutes_per_additional_assistant": 1500
+            }
+        }
+    },
+    "discounts_enabled": true,
+    "international_mode": false,
+    "whitelabel_waved": false,
+    "global_discount_rate": 0,
+    "fees_waived": {
+        "setup_fee": false,
+        "technical_support_fee": false
+    },
+    "international_markups": {}
+}

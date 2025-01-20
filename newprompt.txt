@@ -1,0 +1,19 @@
+I need the following changes to be made
+
+I need a new view to be built for the investor to play with with includes
+
+1 ) investment amount
+2 ) equity investment 
+3 ) all invsetor stats
+
+I need the investor to play around in this tab with the amount and see based on the projections their numbers and I need there to be 
+breakdowns of how those amounts are calculated with formulas. 
+
+I need an investor to play around on the dashbaord and have access to see the formulas and algorithms that were used
+
+I want to add the company valuation in the admin panel, lets start at R125million valutaion
+
+Please add that, make the change and ensure its perfect, I dont want any errors and it needs to be perfect
+
+Pleae assist with the full block of code
+

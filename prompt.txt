@@ -1,0 +1,1861 @@
+I need you to make changes to this code, 
+
+I need the dashboard to be wide page
+
+There are many other things THAT NEED TO BE ADDDED Below
+
+ALL OTHER DEFAULTS – ADDITIONAL REVENUE (WHITE LABEL & OTHER SOFTWARE INCOME)
+
+Below is a text-based outline detailing potential add-on revenue streams beyond the standard subscription fees. This includes White Label income and other optional software features or integrations. You can merge these with your main SaaS pricing model.
+
+1) WHITE LABEL ADD-ONS
+   - White Label Setup Fee
+     • Basic WL Setup (COS): R2,000
+     • Basic WL Setup (Selling): R12,600
+     • Advanced WL Setup (COS): R3,500
+     • Advanced WL Setup (Selling): R14,550
+
+   - White Label Monthly Fee
+     • Basic WL: R12,600/month (charged to client)
+     • Advanced WL: R14,550/month (charged to client)
+
+   - Notes on White Label
+     • White Label means the client’s branding is prominently displayed on the software.
+     • Pricing can be toggled on/off in the model if a client chooses White Label vs. standard.
+     • White Label fees stack on top of (or replace) the regular plan subscription fees.
+
+2) OVERAGE REVENUE (MESSAGES/MINUTES)
+   - Messages
+     • Cost: R0.04/message
+     • Selling: R0.06/message
+   - Minutes (e.g., voice or call center features)
+     • Cost: R2.22/minute
+     • Selling: ±R3.33/minute
+
+   - Notes on Overages
+     • Overages apply when clients exceed the monthly usage limits included in their plan.
+     • Ensure these incremental charges appear in the final revenue line each period.
+
+3) INTEGRATION OR CUSTOM MODULE FEES (OPTIONAL)
+   - Example: NLP Module, BI Reporting, Special APIs, or Specialized Integrations
+   - Setup Fee: R___ (can be one-time or annual)
+   - Monthly/Annual Maintenance Fee: R___
+   - Notes: Could be a separate checkbox or slider in the Streamlit app for each custom module.
+            Users can select which additional features a client purchases.
+
+4) FUTURE / PREMIUM ADD-ONS (PLACEHOLDER)
+   - You may wish to add more advanced AI features, high-volume data processing tiers, or
+     specialized reporting that you can upsell at higher monthly rates.
+
+5) HOW TO INCORPORATE THESE REVENUE STREAMS IN THE MODEL
+   - WHITE LABEL: 
+     • If a certain percentage of new or existing clients opt for White Label, add their fees to
+       the total monthly revenue and charge their specific setup fees upon onboarding.
+   - OVERAGES:
+     • Calculate usage above the plan’s included limits, then multiply by the cost and markup.
+   - CUSTOM MODULE FEES:
+     • If a client chooses advanced modules, the model should add this to their monthly or
+       one-time bill accordingly.
+
+6) DEFAULT CLIENT UPTAKE ASSUMPTIONS (EXAMPLE)
+   - White Label:
+     • 10% of Basic plan clients choose White Label
+     • 20% of Advanced plan clients choose White Label
+     (Adjust these percentages to see revenue impact.)
+   - Overages:
+     • Assume 30% of clients go over their plan’s usage cap each month
+     • Average overage usage: X messages or Y minutes per month
+   - Custom Modules:
+     • 15% of all clients opt for a premium AI integration module at R5,000/month, etc.
+
+7) REPORTING
+   - Ensure your final financial statements have separate lines (or at least sub-lines) for
+     “Core Subscription Revenue,” “White Label Revenue,” “Overages,” and “Other Add-Ons.”
+   - This gives clarity on where additional income is coming from and helps track profitability
+     for each revenue stream separately.
+
+SUMMARY
+- White Label setup and monthly fees can be substantial add-on revenue beyond standard plan
+  pricing.
+- Overages (messages/minutes) provide incremental income for usage above included thresholds.
+- Additional custom modules or premium features can further increase ARPU (Average Revenue
+  Per User).
+- Make these optional in the app so users can easily toggle or adjust assumptions on how many
+  clients adopt White Label or premium modules, or how many incur overages.
+
+NB, ALL CHANGES THAT ARE MADE NEED TO BE INCLUDED IN THE DNA OF THE PROGRAMME AND FIT INTO EVERYTHING ELSE
+
+Please do the following for me please, I need you to add the following 
+
+Please assist with the Periods, I dont wan to see the word perios, i want to see Month, Day or Week or Year etc
+
+Please ensure that when I select distribution between basic, adv and ent,  in the sections that it always ensure that it adds up to 100% 
+
+NB, at the very top of the page above all the tabs I want to see the totals like total Revenue, Total Clients, Sales and then I also want a page with just 
+key metrics, I want the key metrics in cards that are easy to read and see and understand
+
+Here is an example from another code block of an example of cards
+
+st.markdown(f"""
+    <div class="card">
+        <h4>Monthly Cost</h4>
+        <p style="font-size:1.2em;">
+            {symbol}{monthly_cost_rounded:,}
+            <br/><span style="font-size:0.85em;">
+            (Includes messages, minutes, and {cost_details['technical_support_hours']} monthly maintenance hours)
+            </span>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+def apply_custom_css():
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            background-color: #FAFAFA;
+            color: #1D1D1F;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        div[data-testid="stTabBar"] button {
+            background-color: #F0F2F6 !important;
+            color: #4CAF50 !important;
+            border-radius: 0 !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        div[data-testid="stTabBar"] button[data-selected="true"] {
+            border-bottom: 4px solid #4CAF50 !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #4CAF50;
+            font-family: 'Arial Black', Gadget, sans-serif;
+        }
+        .stButton > button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            margin: 2px;
+        }
+        .stButton > button:hover {
+            background-color: #43A047;
+        }
+        label {
+            color: #1D1D1F !important;
+            font-weight: bold;
+        }
+        .stCheckbox > label > div > div, .stRadio > label > div {
+            color: #1D1D1F;
+            font-weight: normal;
+        }
+        .dataframe {
+            color: #1D1D1F;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .dataframe th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            text-align: left;
+        }
+        .dataframe td {
+            background-color: #F7F7F7;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        }
+        .card h4 {
+            color: #4CAF50;
+            margin-top: 0px; 
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1.05em;
+            margin: 0;
+            padding: 6px 0 0 0;
+        }
+        .block-container .stMetric {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .steve-jobs-style {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .steve-jobs-style .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .footer-text {
+            text-align: center;
+            font-size: 0.85em;
+            margin-top: 50px;
+            color: #888;
+        }
+        .chosen-plan {
+            background-color: #e1fbe1 !important;
+            border: 2px solid #4CAF50 !important;
+        }
+        .subtle-text {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .pl-table {
+            width: 70%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .pl-table th {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 8px;
+            text-align: left;
+        }
+        .pl-table td {
+            background-color: #F7F7F7;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .pl-table caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+Please ensure that my code looks that amazing, It needs to be 100000% accurate please, you need to be so precise, if there is a missing calculation or something that I am not accounting for please add it, I will also be sending this to 
+an investor to work with so please have all the changes that I make that an investor should not see or make changes to password protected with the password RCS_18112 
+
+And then all the things that they can do shouldn't be password protected
+
+
+###############################################################################
+# ULTRA-COMPREHENSIVE STREAMLIT DASHBOARD FOR AI SAAS FINANCIAL & OPERATIONAL
+# PROJECTIONS (UP TO 10 YEARS, MONTHLY / QUARTERLY / ANNUAL GRANULARITY)
+#
+# AUTHOR: ChatGPT (example code)
+#
+# DESCRIPTION:
+#   This single-file Streamlit app is designed to fulfill the ultra-detailed
+#   specification outlined in the brief. It contains an admin panel with all
+#   assumptions, scenario toggles, data tables, automated calculations (financial
+#   statements, SaaS metrics, staff scaling), visualizations, and the ability
+#   to compare multiple scenarios. Every effort has been made to include
+#   step-by-step comments, help text, disclaimers, and error handling, to serve
+#   as a robust "enterprise-grade" baseline for further customization.
+#
+# IMPORTANT USAGE NOTES:
+#   1. All numeric values in this code (like R4,268 for Basic COS, 5% inflation,
+#      6% growth, 10% churn, etc.) are purely EXAMPLES. They are exposed as
+#      editable fields in the dashboard, so you can adapt them as needed.
+#   2. Overheads, staff salaries, marketing budgets, and more can be expanded.
+#   3. The scenario system allows you to configure multiple growth/churn sets
+#      (e.g., Base, Optimistic, Rapid AI). You can add more if needed.
+#   4. The code is heavily commented so you can see exactly where to edit or
+#      insert new logic.
+#   5. For advanced usage (like a dedicated database or multi-user authentication),
+#      you will need to enhance or modularize this code. Here, everything is
+#      in one file for illustration.
+#   6. Error handling: Basic checks are included to handle numeric conversions
+#      and zero/negative edge cases. In a production environment, you might want
+#      to add further validations.
+#
+#   *No stone unturned* means we have tried to expose every relevant parameter:
+#    - Staff roles, capacity, auto-scaling
+#    - Growth and churn
+#    - Plans & pricing (monthly + setup + overage)
+#    - Funding rounds (equity vs. loan)
+#    - Overheads & marketing
+#    - Periodicity toggles
+#    - Detailed calculations (Revenue, COS, OPEX, EBITDA, Net Income, Ending Cash)
+#    - Key SaaS metrics (MRR, ARR, LTV, CAC, etc.)
+#
+# HOW TO RUN:
+#   1. Make sure you have Streamlit installed: pip install streamlit
+#   2. Save this file (e.g., as app.py).
+#   3. Run: streamlit run app.py
+#   4. Use the browser interface to explore all functionalities.
+#
+###############################################################################
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+# For date manipulations or advanced calculations, you might want these:
+# import datetime
+# from math import ceil
+
+###############################################################################
+# HELPER FUNCTIONS
+###############################################################################
+
+def safe_float_input(label, default_value):
+    """
+    Safely read a numeric input from the user.
+    If the user input is invalid, show an error and revert to default.
+    
+    :param label: str - The label to display to the user
+    :param default_value: float - The default float value if parsing fails
+    :return: float - The final validated float
+    """
+    user_val = st.text_input(label, value=str(default_value))
+    try:
+        val_float = float(user_val)
+        return val_float
+    except ValueError:
+        st.error(f"Invalid input for '{label}'. Reverting to default: {default_value}")
+        return default_value
+
+
+def compute_growth_factor(growth_rate, period_type='annual'):
+    """
+    Convert user-chosen growth rate to an equivalent factor for the chosen period.
+    
+    Example:
+      If period_type='quarterly' and user enters 8% (per quarter), the factor is 1.08.
+      If period_type='monthly' and user enters 8% (intended as monthly?), factor = 1.08, etc.
+    
+    However, if a user wants annual rate but the period is monthly, we might convert:
+      annual 6% => monthly ~ 0.486% => factor ~ 1.00486
+    
+    This function can be adapted based on how you want to interpret the user input.
+    For simplicity, we assume the user is specifying the rate for the chosen period.
+    
+    :param growth_rate: float, e.g. 6 (for 6%)
+    :param period_type: str, one of ['monthly', 'quarterly', 'annual']
+    :return: float, e.g. 1.06
+    """
+    if period_type == 'monthly':
+        # If user says "6% growth per month," factor = 1.06
+        factor = 1.0 + growth_rate / 100.0
+    elif period_type == 'quarterly':
+        # If user says "6% growth per quarter," factor = 1.06
+        factor = 1.0 + growth_rate / 100.0
+    else:
+        # annual
+        factor = 1.0 + growth_rate / 100.0
+    return factor
+
+
+def compute_churn_factor(churn_rate, period_type='annual'):
+    """
+    Convert user-chosen churn rate to the factor for the chosen period.
+    If churn is 10% annually, then monthly churn ~ 10% / 12, etc.
+    This is approximate. Some prefer a compound approach (1 - (1 - 0.10)**(1/12)).
+    
+    Simplify for demonstration: just divide by # of periods in year.
+    
+    :param churn_rate: float, e.g. 10
+    :param period_type: str, one of ['monthly', 'quarterly', 'annual']
+    :return: float, e.g. 0.10 or 0.025 for quarterly if annual was 10%
+    """
+    if period_type == 'monthly':
+        # naive approach: annual / 12
+        churn = churn_rate / 12 / 100.0
+    elif period_type == 'quarterly':
+        # naive approach: annual / 4
+        churn = churn_rate / 4 / 100.0
+    else:
+        # annual
+        churn = churn_rate / 100.0
+    return churn
+
+
+def allocate_clients_across_plans(total_clients, plan_distribution):
+    """
+    Distribute total new clients across plan types (Basic, Advanced, Enterprise, etc.)
+    
+    :param total_clients: int - total new clients in a period
+    :param plan_distribution: dict - e.g. {"Basic":0.4, "Advanced":0.35, "Enterprise":0.25}
+    :return: dict with integer counts for each plan
+    """
+    distribution_counts = {}
+    for plan_name, pct in plan_distribution.items():
+        distribution_counts[plan_name] = int(round(total_clients * pct))
+    # If there's a rounding mismatch, you can adjust by distributing leftover.
+    # For now, we skip that detail or handle it as needed.
+    return distribution_counts
+
+
+def monthly_inflation(base_value, annual_inflation, current_period, periods_per_year):
+    """
+    Calculate inflated overhead or salary for a given period, factoring a simple
+    pro-rata approach. For demonstration, we do a naive approach that inflates once
+    per year. In real usage, you might want monthly compounding.
+    """
+    years_elapsed = current_period // periods_per_year
+    inflated_value = base_value * ((1 + annual_inflation/100) ** years_elapsed)
+    return inflated_value
+
+
+def calc_staff_needed(onboarding_hours, support_hours, staff_roles_info, period_idx, periods_per_year):
+    """
+    Calculates how many scaling staff are needed based on total hours required.
+    
+    :param onboarding_hours: float - total onboarding hours needed in this period
+    :param support_hours: float - total support hours needed in this period
+    :param staff_roles_info: dictionary containing staff roles data
+                            e.g. {
+                                'Onboarding Specialist': {
+                                    'base_salary': 25000,
+                                    'headcount': 2,
+                                    'annual_raise': 0.05,
+                                    'capacity': 160
+                                },
+                                'Technical Support Specialist': {...},
+                                ...
+                            }
+    :param period_idx: which period we are in (0-based)
+    :param periods_per_year: number of periods in a year (12 for monthly, 4 for quarterly, 1 for annual)
+    :return: dict with updated "scaling_staff_count" and "staff_cost" for each relevant role
+    """
+    staff_costs = {}
+    
+    # We assume "Onboarding Specialist" covers the total onboarding hours
+    if "Onboarding Specialist" in staff_roles_info:
+        base_count = staff_roles_info["Onboarding Specialist"]['headcount']
+        capacity_per_person = staff_roles_info["Onboarding Specialist"]['capacity']
+        
+        # total required staff = total_onboarding_hours / capacity
+        required_onboarding_staff = np.ceil(onboarding_hours / capacity_per_person) if capacity_per_person > 0 else 0
+        
+        # Make sure staff is at least the base_count
+        final_onboard_staff_count = max(required_onboarding_staff, base_count)
+        
+        # compute salary with inflation
+        annual_raise = staff_roles_info["Onboarding Specialist"]['annual_raise']
+        base_salary = staff_roles_info["Onboarding Specialist"]['base_salary']
+        
+        # years passed
+        years_elapsed = period_idx // periods_per_year
+        # naive approach: (1 + annual_raise)^years_elapsed
+        effective_salary = base_salary * ((1 + annual_raise)**(years_elapsed))
+        
+        staff_costs["Onboarding Specialist"] = {
+            "headcount": int(final_onboard_staff_count),
+            "monthly_salary": effective_salary,  # salary for one person
+            "total_cost": final_onboard_staff_count * effective_salary
+        }
+    
+    # We do the same for "Technical Support Specialist"
+    if "Technical Support Specialist" in staff_roles_info:
+        base_count = staff_roles_info["Technical Support Specialist"]['headcount']
+        capacity_per_person = staff_roles_info["Technical Support Specialist"]['capacity']
+        
+        required_support_staff = np.ceil(support_hours / capacity_per_person) if capacity_per_person > 0 else 0
+        final_support_staff_count = max(required_support_staff, base_count)
+        
+        annual_raise = staff_roles_info["Technical Support Specialist"]['annual_raise']
+        base_salary = staff_roles_info["Technical Support Specialist"]['base_salary']
+        years_elapsed = period_idx // periods_per_year
+        effective_salary = base_salary * ((1 + annual_raise)**(years_elapsed))
+        
+        staff_costs["Technical Support Specialist"] = {
+            "headcount": int(final_support_staff_count),
+            "monthly_salary": effective_salary,
+            "total_cost": final_support_staff_count * effective_salary
+        }
+    
+    # If you have more scaling roles (ML/AI Engineer, Full-Stack Dev, QA, etc.),
+    # repeat the pattern above.
+    
+    return staff_costs
+
+
+def generate_projection_table(
+    # Core config
+    period_type="annual",
+    horizon=10,
+    
+    # Global Financial
+    tax_rate=28.0,
+    inflation_rate=5.0,
+    initial_cash=500000.0,
+    
+    # Funding Rounds
+    funding_rounds=None,
+    
+    # Plans & Pricing
+    plans_info=None,
+    
+    # Staff data
+    fixed_staff_info=None,
+    scaling_staff_info=None,
+    
+    # Overheads
+    overhead_items=None,
+    marketing_mode="fixed",      # or "percentage"
+    marketing_budget=120000.0,   # if fixed
+    marketing_pct_of_revenue=0.0, # if percentage
+    
+    # Growth & churn
+    initial_clients=10,
+    growth_rate=6.0,
+    churn_rate=10.0,
+    client_plan_distribution=None,
+    
+    # Onboarding & support
+    onboarding_hours_per_plan=None,
+    support_hours_per_plan=None
+):
+    """
+    Build a DataFrame that projects (month/quarter/year) horizon with:
+       - Clients (start, new, churned, end, plan splits)
+       - Revenue, COS, Overages (if implemented), staff cost, overhead, EBITDA, net income, ending cash
+       - Auto-scaling staff logic
+       - Funding infusion
+       - Taxes, etc.
+    
+    This function returns a Pandas DataFrame with all the relevant columns.
+    
+    :param period_type: str, one of ["monthly", "quarterly", "annual"]
+    :param horizon: int, number of years
+    :param tax_rate: float, e.g. 28 for 28%
+    :param inflation_rate: float, e.g. 5 for 5% yoy
+    :param initial_cash: float, e.g. 500000
+    :param funding_rounds: list of dict, each with { 'name', 'timing_period', 'amount', 'equity_percent', 'is_loan', ... }
+    :param plans_info: dict with plan details
+    :param fixed_staff_info: dict for fixed roles
+    :param scaling_staff_info: dict for scaling roles
+    :param overhead_items: list of overhead line items
+    :param marketing_mode: "fixed" or "percentage"
+    :param marketing_budget: e.g. 120000
+    :param marketing_pct_of_revenue: e.g. 10 => 10% of revenue
+    :param initial_clients: e.g. 10
+    :param growth_rate: e.g. 6 => 6% per chosen period
+    :param churn_rate: e.g. 10 => 10% per year or period (converted inside)
+    :param client_plan_distribution: e.g. {"Basic":0.4, "Advanced":0.35, "Enterprise":0.25}
+    :param onboarding_hours_per_plan: dict, e.g. {"Basic":12, "Advanced":24, "Enterprise":48}
+    :param support_hours_per_plan: dict, e.g. {"Basic":2, "Advanced":5, "Enterprise":10}
+    
+    :return: pd.DataFrame
+    """
+    
+    # Determine how many periods in total
+    if period_type == "monthly":
+        periods_per_year = 12
+        total_periods = horizon * 12
+    elif period_type == "quarterly":
+        periods_per_year = 4
+        total_periods = horizon * 4
+    else:  # annual
+        periods_per_year = 1
+        total_periods = horizon
+    
+    # Convert growth/churn for the chosen period
+    growth_factor = compute_growth_factor(growth_rate, period_type=period_type)  # e.g. 1.06 for 6%
+    churn_decimal = compute_churn_factor(churn_rate, period_type=period_type)    # e.g. 0.025 for quarterly if annual was 10%
+    
+    # Initialize columns
+    data = {
+        "Period": [],
+        "StartingClients": [],
+        "NewClients": [],
+        "ChurnedClients": [],
+        "EndingClients": [],
+        "Revenue": [],
+        "COS": [],
+        "GrossProfit": [],
+        "StaffCosts": [],
+        "Overheads": [],
+        "Marketing": [],
+        "OperatingExpenses": [],
+        "EBITDA": [],
+        "Tax": [],
+        "NetIncome": [],
+        "FundingInflow": [],
+        "LoanRepayment": [],  # if you want to handle loans
+        "EndingCash": []
+    }
+    
+    # If you want to break down plan-by-plan, you can store them in sub-dicts or add columns like Revenue_Basic, etc.
+    
+    current_clients = initial_clients
+    current_cash = initial_cash
+    
+    for period_idx in range(total_periods):
+        
+        # Period label: "Year X", or "Month X", etc.
+        period_label = period_idx + 1
+        data["Period"].append(period_label)
+        
+        # 1) Calculate new + churned + ending clients
+        starting_clients = current_clients
+        # new clients this period (naive approach):
+        new_clients = int(round(starting_clients * (growth_factor - 1.0)))
+        churned_clients = int(round(starting_clients * churn_decimal))
+        ending_clients = starting_clients + new_clients - churned_clients
+        if ending_clients < 0:
+            ending_clients = 0
+        
+        data["StartingClients"].append(starting_clients)
+        data["NewClients"].append(new_clients)
+        data["ChurnedClients"].append(churned_clients)
+        data["EndingClients"].append(ending_clients)
+        
+        # 2) Plan-level revenue & COS
+        # Distribute new_clients across plans
+        if client_plan_distribution:
+            plan_splits = allocate_clients_across_plans(new_clients, client_plan_distribution)
+        else:
+            plan_splits = {"Basic": new_clients}  # fallback if no distribution
+        
+        # Sum up subscription revenue, setup fees, COS
+        period_revenue = 0.0
+        period_cos = 0.0
+        
+        # subscription + COS for existing clients
+        for plan_name, plan_data in plans_info.items():
+            # For the sake of simplicity, assume average of (start + end) for this period
+            avg_clients_this_plan = (ending_clients * client_plan_distribution.get(plan_name,0.0) 
+                                     + starting_clients * client_plan_distribution.get(plan_name,0.0)) / 2.0
+            # monthly revenue * number of months in period
+            if period_type == 'annual':
+                period_length_in_months = 12
+            elif period_type == 'quarterly':
+                period_length_in_months = 3
+            else:  # monthly
+                period_length_in_months = 1
+            
+            monthly_selling_price = plan_data["monthly_selling_price"]
+            monthly_cos = plan_data["monthly_cos"]
+            
+            # Subscription revenue for existing clients
+            subscription_rev = avg_clients_this_plan * monthly_selling_price * period_length_in_months
+            subscription_cos = avg_clients_this_plan * monthly_cos * period_length_in_months
+            
+            period_revenue += subscription_rev
+            period_cos += subscription_cos
+        
+        # Setup fees for new signups
+        for plan_name, new_plan_clients in plan_splits.items():
+            if plan_name in plans_info:
+                plan_data = plans_info[plan_name]
+                period_revenue += (new_plan_clients * plan_data["setup_selling_price"])
+                period_cos += (new_plan_clients * plan_data["setup_cos"])
+        
+        # Overage example: (Not fully implemented, you can add usage-based logic here)
+        # overage_revenue = ...
+        # overage_cos = ...
+        # period_revenue += overage_revenue
+        # period_cos += overage_cos
+        
+        gross_profit = period_revenue - period_cos
+        
+        # 3) Staff Costs
+        # First handle fixed staff
+        total_staff_cost = 0.0
+        for role, info in fixed_staff_info.items():
+            base_salary = info["base_salary"]
+            annual_raise = info["annual_raise"]
+            headcount = info["headcount"]
+            
+            years_elapsed = period_idx // periods_per_year
+            effective_salary = base_salary * ((1 + annual_raise)**(years_elapsed))
+            # Multiply by period_length_in_months if you consider monthly cost
+            staff_cost_this_period = effective_salary * headcount * period_length_in_months
+            total_staff_cost += staff_cost_this_period
+        
+        # Next handle scaling staff
+        # Determine total onboarding + support hours needed
+        # Very naive approach: new clients have certain onboarding hours,
+        # existing clients have certain support hours.
+        total_onboarding_hours = 0.0
+        total_support_hours = 0.0
+        
+        if onboarding_hours_per_plan:
+            for plan_name, hrs_required in onboarding_hours_per_plan.items():
+                # new_plan_clients is how many new clients in that plan
+                new_plan_clients = plan_splits.get(plan_name, 0)
+                total_onboarding_hours += new_plan_clients * hrs_required
+        
+        if support_hours_per_plan:
+            # support hours apply to ending clients, or average clients
+            # let's assume we apply it to average
+            avg_clients = (starting_clients + ending_clients)/2.0
+            # distribute across plans (like above)
+            for plan_name, hrs_required in support_hours_per_plan.items():
+                # fraction
+                fraction = client_plan_distribution.get(plan_name,0.0)
+                plan_avg_clients = avg_clients * fraction
+                total_support_hours += plan_avg_clients * hrs_required
+        
+        # Now see how many staff we need
+        scaling_staff_costs = calc_staff_needed(
+            total_onboarding_hours, total_support_hours, scaling_staff_info,
+            period_idx, periods_per_year
+        )
+        
+        # Sum up cost for each scaling role
+        for role, staff_data in scaling_staff_costs.items():
+            # staff_data has "total_cost"
+            # Multiply by period_length_in_months if your staff cost is monthly
+            # But we already do it inside the function if needed. If not, do it here.
+            staff_cost = staff_data["total_cost"] * period_length_in_months
+            total_staff_cost += staff_cost
+        
+        # 4) Overheads
+        total_overheads = 0.0
+        for overhead in overhead_items:
+            base_overhead = overhead["monthly_cost"]
+            overhead_annual_increase = overhead["annual_increase"]
+            overhead_value = monthly_inflation(base_overhead, overhead_annual_increase, period_idx, periods_per_year)
+            # multiply by the # of months in the period
+            overhead_value_period = overhead_value * period_length_in_months
+            total_overheads += overhead_value_period
+        
+        # 5) Marketing
+        if marketing_mode == "percentage":
+            marketing_spend = period_revenue * (marketing_pct_of_revenue / 100.0)
+        else:
+            # fixed
+            # apply inflation if desired
+            marketing_spend = monthly_inflation(marketing_budget, inflation_rate, period_idx, periods_per_year)
+            marketing_spend *= period_length_in_months
+        
+        # 6) Operating Expenses
+        operating_expenses = total_staff_cost + total_overheads + marketing_spend
+        
+        # 7) EBITDA
+        ebitda = gross_profit - operating_expenses
+        
+        # 8) Tax
+        if ebitda > 0:
+            tax = ebitda * (tax_rate / 100.0)
+        else:
+            tax = 0.0
+        
+        # 9) Net Income
+        net_income = ebitda - tax
+        
+        # 10) Funding inflow check
+        funding_inflow = 0.0
+        loan_repayment = 0.0
+        if funding_rounds:
+            # naive approach: if any round matches current period, add the funds
+            for round_info in funding_rounds:
+                # round_info might have a "timing_period" = e.g. 4 => triggers in period 4
+                if round_info["timing_period"] == period_label:
+                    funding_inflow += round_info["amount"]
+                    # If it's a loan, we might record the principal or handle repayment separately.
+                    # This is just an example.
+        
+        # 11) Ending Cash
+        current_cash = current_cash + net_income + funding_inflow - loan_repayment
+        if current_cash < 0:
+            current_cash = 0  # or let it go negative to track deficits
+        
+        # Append final calcs to data
+        data["Revenue"].append(period_revenue)
+        data["COS"].append(period_cos)
+        data["GrossProfit"].append(gross_profit)
+        data["StaffCosts"].append(total_staff_cost)
+        data["Overheads"].append(total_overheads)
+        data["Marketing"].append(marketing_spend)
+        data["OperatingExpenses"].append(operating_expenses)
+        data["EBITDA"].append(ebitda)
+        data["Tax"].append(tax)
+        data["NetIncome"].append(net_income)
+        data["FundingInflow"].append(funding_inflow)
+        data["LoanRepayment"].append(loan_repayment)
+        data["EndingCash"].append(current_cash)
+        
+        # Move to next period
+        current_clients = ending_clients
+    
+    df = pd.DataFrame(data)
+    return df
+
+
+def compute_saas_metrics(df, period_type="annual"):
+    """
+    Compute key SaaS metrics from the projection DataFrame, such as
+    MRR, ARR, CAC, LTV, etc. This example is simplified:
+    
+      - MRR is approximate if period = monthly. If period != monthly,
+        we might compute an average monthly from the period's revenue.
+      - CAC requires total sales/marketing vs new clients. We used
+        marketing alone as a stand-in.
+      - LTV also depends on churn, average margin, etc.
+    
+    In a real scenario, you'd integrate more precise definitions.
+    
+    :param df: The main projection DataFrame with columns:
+               [StartingClients, NewClients, ... Revenue, OperatingExpenses, etc.]
+    :param period_type: "monthly", "quarterly", or "annual"
+    :return: dict or DataFrame with the key metrics
+    """
+    metrics = {}
+    
+    # Example: MRR = total subscription revenue in final period / # of months (if not monthly)
+    final_period = df.iloc[-1]
+    # Let's define MRR in a naive way: final_period['Revenue'] / # months
+    if period_type == 'monthly':
+        mrr = final_period["Revenue"]  # because the period is 1 month
+    elif period_type == 'quarterly':
+        # if the period is a quarter, we approximate monthly by dividing by 3
+        mrr = final_period["Revenue"] / 3.0
+    else:  # annual
+        mrr = final_period["Revenue"] / 12.0
+    
+    arr = mrr * 12.0
+    
+    # CAC: (marketing spend over the entire horizon) / total new clients
+    total_marketing = df["Marketing"].sum()
+    total_new_clients = df["NewClients"].sum()
+    if total_new_clients > 0:
+        cac = total_marketing / total_new_clients
+    else:
+        cac = 0.0
+    
+    # LTV: naive approach => average monthly margin / monthly churn
+    # monthly churn from compute_churn_factor, but we didn't store it. Let's approximate from final period churn vs. end clients
+    # This is extremely simplified, but just for demonstration:
+    final_churned_clients = final_period["ChurnedClients"] if final_period["ChurnedClients"] else 1
+    end_clients = final_period["EndingClients"] if final_period["EndingClients"] else 1
+    
+    # monthly net margin example
+    # if period_type='annual', monthly margin ~ (Revenue - COS) / 12
+    monthly_margin = 0
+    if period_type == 'monthly':
+        monthly_margin = final_period["Revenue"] - final_period["COS"] - final_period["StaffCosts"] - final_period["Overheads"] - final_period["Marketing"]
+    elif period_type == 'quarterly':
+        monthly_margin = (final_period["Revenue"] - final_period["COS"] 
+                          - final_period["StaffCosts"] - final_period["Overheads"] - final_period["Marketing"]) / 3.0
+    else:
+        monthly_margin = (final_period["Revenue"] - final_period["COS"] 
+                          - final_period["StaffCosts"] - final_period["Overheads"] - final_period["Marketing"]) / 12.0
+    
+    # approximate churn ratio monthly
+    # if final_period is annual, then final_period["ChurnedClients"] is for a year => monthly churn ~ churned / (12 * end clients)
+    # caution: if end_clients is 0, we handle that
+    if end_clients == 0:
+        monthly_churn = 0.0
+    else:
+        if period_type == 'monthly':
+            monthly_churn = final_churned_clients / float(end_clients)  # for that month
+        elif period_type == 'quarterly':
+            monthly_churn = (final_churned_clients / float(end_clients)) / 3.0
+        else:
+            # annual => /12
+            monthly_churn = (final_churned_clients / float(end_clients)) / 12.0
+    
+    if monthly_churn > 0:
+        ltv = monthly_margin / monthly_churn
+    else:
+        ltv = 0.0
+    
+    # Payback Period = CAC / monthly net margin (assuming margin per new client is monthly_margin / new clients)
+    # We'll do a naive approach:
+    monthly_margin_per_client = 0
+    if total_new_clients > 0:
+        monthly_margin_per_client = (df["Revenue"].sum() - df["COS"].sum() - df["StaffCosts"].sum() - 
+                                     df["Overheads"].sum() - df["Marketing"].sum()) / (total_new_clients * df.shape[0])
+    payback_period_months = 0.0
+    if monthly_margin_per_client > 0:
+        payback_period_months = cac / monthly_margin_per_client
+    
+    # Summarize
+    metrics["MRR"] = mrr
+    metrics["ARR"] = arr
+    metrics["CAC"] = cac
+    metrics["LTV"] = ltv
+    metrics["PaybackPeriod_Months"] = payback_period_months
+    
+    return metrics
+
+
+###############################################################################
+# MAIN STREAMLIT APP
+###############################################################################
+
+def main():
+    st.title("AI SaaS Financial & Operational Dashboard")
+    st.markdown("""
+        **Welcome!** This **Streamlit** app projects up to 10 years of financials
+        (monthly, quarterly, or annual detail) for an AI SaaS business model.
+        
+        Use the sidebars or the 'Assumptions / Inputs' tabs to configure your scenario.
+        Then explore the 'Projections' and 'Scenario Comparison' tabs to see results.
+        
+        *All numeric defaults here are purely examples.*  
+        They can be changed in the Admin Panel sections below.
+        
+        ---
+    """)
+    
+    # We use Streamlit tabs for structure
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        "Global / Funding", 
+        "Plans & COS",
+        "Staff & Overheads",
+        "Growth & Churn",
+        "Projections",
+        "Scenario Comparison"
+    ])
+    
+    # Session State approach to store "scenarios"
+    if "scenarios" not in st.session_state:
+        st.session_state["scenarios"] = {}
+    
+    ###########################################################################
+    # TAB 1: GLOBAL / FUNDING
+    ###########################################################################
+    with tab1:
+        st.header("1. Global Financial Settings & Funding Rounds")
+        
+        # Basic info
+        company_name = st.text_input("Company Name", value="askAYYI")
+        colA, colB = st.columns(2)
+        with colA:
+            tax_rate = safe_float_input("Corporate Tax Rate (%)", 28)
+            inflation_rate = safe_float_input("Inflation Rate (%)", 5)
+            initial_cash = safe_float_input("Initial Cash on Hand (R)", 500000)
+        with colB:
+            horizon = st.slider("Projection Horizon (years)", 1, 10, 10)
+            period_type = st.selectbox("Periodicity", ["annual", "quarterly", "monthly"])
+        
+        st.markdown("""
+        **Funding Rounds**  
+        - Add multiple rounds. For each, specify the period you want it to occur
+          (e.g., if monthly, period 12 means Month 12; if quarterly, period 4 means Q4).
+        - If it's equity, no repayment. If it's a loan, you can track interest in advanced usage.
+        """)
+        
+        # Let user define multiple rounds
+        num_rounds = st.number_input("Number of Funding Rounds", min_value=0, max_value=10, value=1)
+        funding_rounds = []
+        for i in range(num_rounds):
+            st.subheader(f"Funding Round #{i+1}")
+            round_name = st.text_input(f"Round {i+1} Name", value=f"Seed Round {i+1}", key=f"fr_name_{i}")
+            timing_period = st.number_input(f"Round {i+1} - Period to Inject Funds", min_value=1, value=(i+1), key=f"fr_timing_{i}")
+            amount = safe_float_input(f"Round {i+1} - Amount (R)", 1000000.0)
+            # Additional fields for equity or loan
+            # We'll do a simplified approach: just record the amount as an inflow
+            # For advanced usage, store interest rate, etc.
+            round_data = {
+                "name": round_name,
+                "timing_period": timing_period,
+                "amount": amount
+            }
+            funding_rounds.append(round_data)
+        
+        st.info("Note: For a more advanced approach, you can track pre-money valuation, equity stake, or loan details. This is a simplified version.")
+    
+    ###########################################################################
+    # TAB 2: PLANS & COS
+    ###########################################################################
+    with tab2:
+        st.header("2. Plans & Cost of Sales (COS)")
+        st.write("""
+        Here you can configure the various subscription plans, their monthly and
+        setup costs, and their respective selling prices. Overages can also be added.
+        """)
+        
+        # We'll store plan data in a dict
+        default_plans = {
+            "Basic": {
+                "monthly_cos": 4268,
+                "setup_cos": 6000,
+                "monthly_selling_price": 9869,
+                "setup_selling_price": 7800
+            },
+            "Advanced": {
+                "monthly_cos": 9445,
+                "setup_cos": 15600,
+                "monthly_selling_price": 21709,
+                "setup_selling_price": 19200
+            },
+            "Enterprise": {
+                "monthly_cos": 49026,
+                "setup_cos": 31200,
+                "monthly_selling_price": 94587,
+                "setup_selling_price": 45600
+            }
+        }
+        
+        # Let user add or remove plan rows in a "dynamic" sense
+        # For demonstration, we'll just let them adjust these default 3
+        plans_info = {}
+        for plan_name, plan_def in default_plans.items():
+            st.subheader(f"{plan_name} Plan")
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                monthly_cos = safe_float_input(f"{plan_name} - Monthly COS", plan_def["monthly_cos"])
+            with col2:
+                setup_cos = safe_float_input(f"{plan_name} - Setup COS", plan_def["setup_cos"])
+            with col3:
+                monthly_sell = safe_float_input(f"{plan_name} - Monthly Selling Price", plan_def["monthly_selling_price"])
+            with col4:
+                setup_sell = safe_float_input(f"{plan_name} - Setup Selling Price", plan_def["setup_selling_price"])
+            
+            plans_info[plan_name] = {
+                "monthly_cos": monthly_cos,
+                "setup_cos": setup_cos,
+                "monthly_selling_price": monthly_sell,
+                "setup_selling_price": setup_sell
+            }
+        
+        st.markdown("**Overages**: e.g., messages & minutes (cost + markup). Excluded from this example but you can add them similarly.")
+        st.warning("Overage costs are not fully implemented in the main calculations above. Please adapt the code where indicated.")
+    
+    ###########################################################################
+    # TAB 3: STAFF & OVERHEADS
+    ###########################################################################
+    with tab3:
+        st.header("3. Staffing & Overheads")
+        st.write("Configure fixed staff, scaling staff logic, and overhead line items here.")
+        
+        st.subheader("Fixed (Non-Scaling) Staff")
+        # Example fixed staff roles
+        default_fixed_staff = {
+            "CEO": {
+                "headcount": 1,
+                "base_salary": 80000,
+                "annual_raise": 0.05
+            },
+            "CTO": {
+                "headcount": 1,
+                "base_salary": 70000,
+                "annual_raise": 0.05
+            },
+            "CFO": {
+                "headcount": 1,
+                "base_salary": 65000,
+                "annual_raise": 0.05
+            },
+            "Admin": {
+                "headcount": 1,
+                "base_salary": 18000,
+                "annual_raise": 0.05
+            }
+        }
+        
+        fixed_staff_info = {}
+        for role, data_dict in default_fixed_staff.items():
+            st.write(f"**{role}**")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                headcount = st.number_input(f"{role} Headcount", min_value=0, value=data_dict["headcount"], key=f"{role}_hc")
+            with col2:
+                base_salary = safe_float_input(f"{role} Base Salary (monthly)", data_dict["base_salary"])
+            with col3:
+                annual_raise = st.slider(f"{role} Annual Raise (%)", 0.0, 1.0, data_dict["annual_raise"], 0.01)
+            fixed_staff_info[role] = {
+                "headcount": headcount,
+                "base_salary": base_salary,
+                "annual_raise": annual_raise
+            }
+        
+        st.subheader("Scaling (Capacity-Driven) Staff")
+        # Example scaling staff roles
+        default_scaling_staff = {
+            "Onboarding Specialist": {
+                "headcount": 2,
+                "base_salary": 25000,
+                "annual_raise": 0.05,
+                "capacity": 160
+            },
+            "Technical Support Specialist": {
+                "headcount": 1,
+                "base_salary": 30000,
+                "annual_raise": 0.05,
+                "capacity": 160
+            },
+            "ML/AI Engineer": {
+                "headcount": 2,
+                "base_salary": 50000,
+                "annual_raise": 0.05,
+                "capacity": 160
+            },
+            "Full-Stack Dev": {
+                "headcount": 1,
+                "base_salary": 40000,
+                "annual_raise": 0.05,
+                "capacity": 160
+            },
+            "QA Engineer": {
+                "headcount": 1,
+                "base_salary": 30000,
+                "annual_raise": 0.05,
+                "capacity": 160
+            }
+        }
+        
+        scaling_staff_info = {}
+        for role, data_dict in default_scaling_staff.items():
+            st.write(f"**{role}**")
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                headcount = st.number_input(f"{role} Base Headcount", min_value=0, value=data_dict["headcount"], key=f"{role}_hc_scale")
+            with c2:
+                base_salary = safe_float_input(f"{role} Base Salary (monthly)", data_dict["base_salary"])
+            with c3:
+                annual_raise = st.slider(f"{role} Annual Raise (%)", 0.0, 1.0, data_dict["annual_raise"], 0.01, key=f"{role}_raise_scale")
+            with c4:
+                capacity = st.number_input(f"{role} Capacity (hrs/mo)", min_value=0, value=data_dict["capacity"], key=f"{role}_cap_scale")
+            scaling_staff_info[role] = {
+                "headcount": headcount,
+                "base_salary": base_salary,
+                "annual_raise": annual_raise,
+                "capacity": capacity
+            }
+        
+        st.subheader("Overheads & Other Operational Costs")
+        st.markdown("Below you can see default overhead line items (with 5% annual inflation). Add more if needed in the code or by customizing the UI.")
+        
+        default_overheads = [
+            {
+                "name": "Office Rent & Utilities",
+                "monthly_cost": 40000,
+                "annual_increase": 5
+            },
+            {
+                "name": "Cloud Hosting / Tools",
+                "monthly_cost": 20000,
+                "annual_increase": 5
+            },
+            {
+                "name": "Other Admin Overheads",
+                "monthly_cost": 10000,
+                "annual_increase": 5
+            },
+            {
+                "name": "External Sales/Marketing",
+                "monthly_cost": 120000,
+                "annual_increase": 5
+            }
+        ]
+        
+        overhead_items = []
+        for idx, oh in enumerate(default_overheads):
+            st.write(f"**Overhead Item {idx+1}: {oh['name']}**")
+            col1, col2 = st.columns(2)
+            with col1:
+                monthly_c = safe_float_input(f"{oh['name']} - Monthly Cost (R)", oh["monthly_cost"])
+            with col2:
+                ann_increase = st.slider(f"{oh['name']} - Annual Increase (%)", 0, 20, oh["annual_increase"], 1)
+            overhead_items.append({
+                "name": oh["name"],
+                "monthly_cost": monthly_c,
+                "annual_increase": ann_increase
+            })
+        
+        st.markdown("**Marketing Budget** (additional to external marketing overhead above)")
+        marketing_mode = st.selectbox("Marketing Approach", ["fixed", "percentage"])
+        marketing_budget_val = 0.0
+        marketing_pct_val = 0.0
+        if marketing_mode == "fixed":
+            marketing_budget_val = safe_float_input("Fixed Monthly Marketing Budget (R)", 0)
+        else:
+            marketing_pct_val = safe_float_input("Marketing as % of Revenue", 0)
+        
+        st.warning("Note: If you want multiple marketing line items, simply add them to overhead_items or expand the code.")
+    
+    ###########################################################################
+    # TAB 4: GROWTH & CHURN
+    ###########################################################################
+    with tab4:
+        st.header("4. Growth, Churn & Client Distribution")
+        
+        st.markdown("""
+        Configure how your client base grows or churns over time, as well as
+        the distribution of clients across your plans.
+        
+        **Example**: 6% quarterly growth => factor ~1.06. 10% annual churn => ~2.5% per quarter.
+        """)
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            initial_clients_val = st.number_input("Initial Total Clients", min_value=0, value=10)
+        with col2:
+            growth_rate_val = safe_float_input("Growth Rate (% per period)", 6)  # interpret as per chosen period
+            churn_rate_val = safe_float_input("Annual Churn Rate (%)", 10)      # will be converted if monthly/quarterly
+        
+        st.markdown("**Client Distribution** (where new & existing clients are allocated by plan)")
+        default_distribution = {
+            "Basic": 0.4,
+            "Advanced": 0.35,
+            "Enterprise": 0.25
+        }
+        plan_distribution = {}
+        total_dist = 0.0
+        for plan_name in plans_info.keys():
+            dist = st.slider(f"Distribution % for {plan_name}", 0.0, 1.0, default_distribution.get(plan_name, 0.0), 0.01)
+            plan_distribution[plan_name] = dist
+            total_dist += dist
+        
+        # If total_dist != 1.0, we can auto-scale or let the user proceed. We'll just proceed or warn.
+        if abs(total_dist - 1.0) > 0.0001:
+            st.warning(f"Total distribution = {total_dist*100:.2f}%. Ideally, this should be 100%.")
+        
+        st.subheader("Onboarding & Support Hours (per plan)")
+        st.markdown("""
+        - Onboarding hours apply to NEW clients in a plan.
+        - Support hours apply (in this example) to the average client count for the period.
+        - Staff auto-scaling will happen if the required hours exceed the capacity of existing staff.
+        """)
+        
+        default_onboarding = {
+            "Basic": 12,
+            "Advanced": 24,
+            "Enterprise": 48
+        }
+        
+        onboarding_hours = {}
+        for plan_name in plans_info.keys():
+            val_hrs = st.number_input(f"Onboarding hours for {plan_name}", 0, 1000, default_onboarding.get(plan_name, 0))
+            onboarding_hours[plan_name] = val_hrs
+        
+        default_support = {
+            "Basic": 2,
+            "Advanced": 5,
+            "Enterprise": 10
+        }
+        
+        support_hours = {}
+        for plan_name in plans_info.keys():
+            val_hrs = st.number_input(f"Monthly Support hours for {plan_name}", 0, 1000, default_support.get(plan_name, 0))
+            support_hours[plan_name] = val_hrs
+        
+        st.markdown("You can add logic to reduce onboarding hours over time, or other advanced logic, in the code.")
+        
+    ###########################################################################
+    # TAB 5: PROJECTIONS
+    ###########################################################################
+    with tab5:
+        st.header("5. Projections & Key Metrics")
+        st.write("Click the 'Generate Projection' button to calculate the financial model for this single scenario.")
+        
+        if st.button("Generate Projection"):
+            df_projection = generate_projection_table(
+                period_type=period_type,
+                horizon=horizon,
+                tax_rate=tax_rate,
+                inflation_rate=inflation_rate,
+                initial_cash=initial_cash,
+                funding_rounds=funding_rounds,
+                plans_info=plans_info,
+                fixed_staff_info=fixed_staff_info,
+                scaling_staff_info=scaling_staff_info,
+                overhead_items=overhead_items,
+                marketing_mode=marketing_mode,
+                marketing_budget=marketing_budget_val,
+                marketing_pct_of_revenue=marketing_pct_val,
+                initial_clients=initial_clients_val,
+                growth_rate=growth_rate_val,
+                churn_rate=churn_rate_val,
+                client_plan_distribution=plan_distribution,
+                onboarding_hours_per_plan=onboarding_hours,
+                support_hours_per_plan=support_hours
+            )
+            
+            st.subheader("Projection Table")
+            st.dataframe(df_projection.style.format("{:,.2f}"))
+            
+            # Key metrics
+            metrics = compute_saas_metrics(df_projection, period_type=period_type)
+            st.subheader("Key SaaS Metrics")
+            col1, col2, col3, col4, col5 = st.columns(5)
+            col1.metric("MRR (R)", f"{metrics['MRR']:,.2f}")
+            col2.metric("ARR (R)", f"{metrics['ARR']:,.2f}")
+            col3.metric("CAC (R)", f"{metrics['CAC']:,.2f}")
+            col4.metric("LTV (R)", f"{metrics['LTV']:,.2f}")
+            col5.metric("Payback (mos)", f"{metrics['PaybackPeriod_Months']:,.2f}")
+            
+            # Basic charts
+            st.subheader("Charts")
+            # Chart: Revenue vs. Operating Expenses
+            chart_df = df_projection[["Period","Revenue","OperatingExpenses"]].melt("Period")
+            st.line_chart(chart_df, x="Period", y="value", color="variable")
+            
+            # Chart: Ending Cash
+            st.line_chart(df_projection, x="Period", y="EndingCash")
+            
+            st.markdown("You can expand this to show staff growth vs. client growth or any other visual.")
+            
+            # Provide an export option
+            st.download_button(
+                label="Download CSV",
+                data=df_projection.to_csv(index=False),
+                file_name="projection_output.csv",
+                mime="text/csv"
+            )
+    
+    ###########################################################################
+    # TAB 6: SCENARIO COMPARISON
+    ###########################################################################
+    with tab6:
+        st.header("6. Scenario Analysis & Comparison")
+        st.markdown("""
+        Here, you can **save** the current scenario with a name (e.g. "Base" or
+        "Optimistic"), and then define new assumptions in the earlier tabs, re-run
+        the projection, and **save** that scenario as well. Finally, compare them
+        side-by-side.
+        """)
+        
+        scenario_name = st.text_input("Scenario Name", value="Base Scenario")
+        
+        if st.button("Save Current Scenario"):
+            # We'll do a quick generation with the current inputs
+            df_projection_scenario = generate_projection_table(
+                period_type=period_type,
+                horizon=horizon,
+                tax_rate=tax_rate,
+                inflation_rate=inflation_rate,
+                initial_cash=initial_cash,
+                funding_rounds=funding_rounds,
+                plans_info=plans_info,
+                fixed_staff_info=fixed_staff_info,
+                scaling_staff_info=scaling_staff_info,
+                overhead_items=overhead_items,
+                marketing_mode=marketing_mode,
+                marketing_budget=marketing_budget_val,
+                marketing_pct_of_revenue=marketing_pct_val,
+                initial_clients=initial_clients_val,
+                growth_rate=growth_rate_val,
+                churn_rate=churn_rate_val,
+                client_plan_distribution=plan_distribution,
+                onboarding_hours_per_plan=onboarding_hours,
+                support_hours_per_plan=support_hours
+            )
+            metrics_scenario = compute_saas_metrics(df_projection_scenario, period_type=period_type)
+            
+            # Save in session state
+            st.session_state["scenarios"][scenario_name] = {
+                "df": df_projection_scenario,
+                "metrics": metrics_scenario
+            }
+            st.success(f"Scenario '{scenario_name}' saved successfully!")
+        
+        st.subheader("Saved Scenarios")
+        scenario_list = list(st.session_state["scenarios"].keys())
+        if len(scenario_list) < 2:
+            st.warning("Please save at least 2 scenarios to compare.")
+        else:
+            scenario_choice_1 = st.selectbox("Scenario A", scenario_list)
+            scenario_choice_2 = st.selectbox("Scenario B", scenario_list, index=1 if len(scenario_list)>1 else 0)
+            
+            if scenario_choice_1 == scenario_choice_2:
+                st.warning("Please select two different scenarios.")
+            else:
+                dfA = st.session_state["scenarios"][scenario_choice_1]["df"]
+                dfB = st.session_state["scenarios"][scenario_choice_2]["df"]
+                metricsA = st.session_state["scenarios"][scenario_choice_1]["metrics"]
+                metricsB = st.session_state["scenarios"][scenario_choice_2]["metrics"]
+                
+                st.write(f"**Comparing '{scenario_choice_1}' vs. '{scenario_choice_2}'**")
+                
+                # Basic numeric comparison
+                colA, colB = st.columns(2)
+                with colA:
+                    st.subheader(scenario_choice_1)
+                    st.write(metricsA)
+                with colB:
+                    st.subheader(scenario_choice_2)
+                    st.write(metricsB)
+                
+                # Plot comparisons, e.g. EndingCash side by side
+                comparison_df = pd.DataFrame({
+                    "Period": dfA["Period"],
+                    f"{scenario_choice_1}_EndingCash": dfA["EndingCash"],
+                    f"{scenario_choice_2}_EndingCash": dfB["EndingCash"]
+                })
+                st.line_chart(comparison_df, x="Period", y=[f"{scenario_choice_1}_EndingCash", f"{scenario_choice_2}_EndingCash"])
+                
+                st.markdown("You can expand this comparison to include Revenue, EBITDA, etc.")
+    
+    ############################################################################
+    # Footer notice or disclaimers
+    ############################################################################
+    st.markdown("""
+    ---
+    **Disclaimers**:
+    1. This financial model is a simplified demonstration. Real-world SaaS
+       projections require more detailed assumptions around usage-based costs,
+       payment schedules, loan interest, discount rates, etc.
+    2. Certain costs might exclude taxes, specialized marketing campaigns, or
+       expansions (unless you add them explicitly).
+    3. Always consult a qualified financial professional for critical decisions.
+    """)
+
+
+if __name__ == "__main__":
+    main()
+
+Here was the intitial brief
+# **ULTRA-DETAILED BRIEF FOR ANOTHER AI**  
+*(A **super-comprehensive** specification for building a Streamlit-based Financial & Operational Dashboard for an AI SaaS business. This includes every single relevant input, default numeric values, thorough calculations, and complete instructions on how to structure the admin panel and user-facing sections. All numbers are examples and should be editable in the final application.)*
+
+---
+
+## **TABLE OF CONTENTS**
+
+1. [App Overview & Core Objectives](#1-app-overview--core-objectives)  
+2. [Detailed Inputs & Admin Panel Requirements](#2-detailed-inputs--admin-panel-requirements)  
+3. [Plans & Pricing Details](#3-plans--pricing-details)  
+4. [Staffing Details](#4-staffing-details)  
+5. [Overheads & Other Operational Costs](#5-overheads--other-operational-costs)  
+6. [Growth, Churn & Client Distribution](#6-growth-churn--client-distribution)  
+7. [Funding & Investment Rounds](#7-funding--investment-rounds)  
+8. [SaaS & Financial Calculations](#8-saas--financial-calculations)  
+9. [Data Tables, Charts & Visualizations](#9-data-tables-charts--visualizations)  
+10. [Scenario Analysis & Preset Profiles](#10-scenario-analysis--preset-profiles)  
+11. [Dashboard Structure & Navigation](#11-dashboard-structure--navigation)  
+12. [Final Deliverables](#12-final-deliverables)  
+13. [Validation & Testing Notes](#13-validation--testing-notes)
+
+---
+
+## **1. APP OVERVIEW & CORE OBJECTIVES**
+
+- **Goal**: Build a **Streamlit** dashboard that projects up to **10 years** of financials (with an option for monthly or quarterly detail). 
+- **Users**:  
+  1. **Admin / Finance** – Full edit rights to all assumptions (staff salaries, overhead, marketing budgets, growth rates, churn, etc.).  
+  2. **Executives / Investors** – Read-only or limited interaction (view scenarios, see charts, generate PDF/Excel exports).
+
+### **Must-Have Features**  
+1. Real-time **financial projections** (Revenue, COS, Operating Expenses, EBITDA, Net Income, Ending Cash).  
+2. **SaaS metrics**: MRR, ARR, churn, LTV, CAC, payback period, staff-to-client ratio.  
+3. **Staffing logic**: auto-calculate new hires based on onboarding/support hours.  
+4. **Funding rounds**: equity vs. loan, flexible amounts and timelines.  
+5. **Presets & scenario analysis**: Base, Optimistic, Rapid AI.  
+6. **Visualizations**: revenue vs. OPEX chart, staff growth vs. client growth, ending cash, etc.  
+
+---
+
+## **2. DETAILED INPUTS & ADMIN PANEL REQUIREMENTS**
+
+All the following **input fields** must be **editable** in an **Admin Panel** (or multiple tabs in the Streamlit app). The admin must be able to change any numeric values, turn scenarios on/off, or add new items (e.g., new staff roles, new overhead items, additional growth or churn options, new funding rounds).
+
+Below is a **complete** list of recommended input boxes/controls:
+
+### **2.1. Global Financial & Company Setup**
+
+| **Field**                 | **Default Example** | **Description**                                                                                                                                                 |
+|---------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Company Name*            | `askAYYI`          | Used throughout the dashboard and exports.                                                                                                                      |
+| *Corporate Tax Rate* (%)  | `28`               | Applied to EBITDA to get tax expense.                                                                                                                           |
+| *Inflation Rate* (%)      | `5`                | Applied annually to overhead, salaries, etc.                                                                                                                    |
+| *Projection Horizon*      | `10 years`         | Number of years to forecast.                                                                                                                                    |
+| *Periodicity*             | Annual / Quarterly / Monthly | Toggle to choose if calculations are done yearly (10 periods), quarterly (40 periods), or monthly (120 periods).                                               |
+| *Initial Cash on Hand*    | `R 500,000`        | Starting cash balance (before any funding).                                                                                                                     |
+
+### **2.2. Funding & Investment Rounds**
+
+*(See Section [7](#7-funding--investment-rounds) for more details.)*  
+For each funding round, the following fields:
+
+1. **Round Name** (e.g., “Seed Round”, “PSG Investment”)  
+2. **Round Timing** (e.g., “Year 2”, “Quarter 6”, “Month 18”)  
+3. **Investment Amount** (e.g., R10,000,000)  
+4. **Pre-Money Valuation** (if equity)  
+5. **Equity %** (or negotiated stake)  
+6. **Loan Terms** (if not equity): interest %, repayment schedule.  
+
+The user must be able to add **multiple** rounds.
+
+### **2.3. Plans & COS**
+
+1. **Plan Names** (e.g., Basic, Advanced, Enterprise, White Label, etc.)  
+2. **Monthly COS** (e.g., R4,268 for Basic, R9,445 for Advanced, etc.)  
+3. **Setup COS** (e.g., R6,000 for Basic, R15,600 for Advanced, etc.)  
+4. **Selling Price (Monthly)** (e.g., R9,869 for Basic, R21,709 for Advanced, etc.)  
+5. **Setup Fee (Selling Price)** (e.g., R7,800 for Basic, R19,200 for Advanced, etc.)  
+6. **Overages**: cost + markup for messages/minutes.  
+   - Example: *Messages Cost* = R0.04, *Messages Selling Price* = R0.06, *Minutes Cost* = R2.22, *Minutes Selling Price* = ~R3.33.  
+
+*(See Section [3](#3-plans--pricing-details) for a full table.)*
+
+### **2.4. Staffing**
+
+1. **Roles** (CEO, CTO, CFO, Admin, Onboarding, Tech Support, ML/AI Engineer, etc.).  
+2. **Base Monthly Salary** for each role.  
+3. **Initial Headcount**.  
+4. **Annual Raise** percentage (e.g., 5%).  
+5. **Capacity (hrs/month)** for each role if it’s impacted by client volume. Non-scaling roles might be set to a fixed headcount and no capacity logic.  
+
+*(Details in Section [4](#4-staffing-details).)*
+
+### **2.5. Overheads**
+
+- **Office Rent & Utilities** (monthly cost, inflated by 5% yearly).  
+- **Cloud Hosting / Tools** (monthly).  
+- **Other Admin Overheads** (Insurance, legal, etc.).  
+
+Each overhead item can be broken down or grouped. The admin panel should allow adding new overhead line items or editing existing ones.
+
+### **2.6. Marketing & Sales**
+
+- **Marketing Budget**: either a fixed monthly retainer or a percentage of revenue.  
+  - Example: a monthly retainer of R120,000 for an external agency.  
+- **Optional**: Additional marketing line items.  
+
+### **2.7. Growth & Churn**
+
+*(See Section [6](#6-growth-churn--client-distribution).)*  
+- **Quarterly/Annual Growth Rate** for new client signups.  
+- **Churn Rate**.  
+- **Client Distribution** among Basic/Advanced/Enterprise (e.g., 40%/35%/25%).  
+- **Initial Client Count** (total, plus breakdown per plan).
+
+### **2.8. Onboarding & Support Hours**
+
+- **Year 1 (or baseline) Onboarding Hours**: e.g., Basic = 12, Advanced = 24, Enterprise = 48.  
+- **Reduction per year**: e.g., -50% each subsequent year or quarter.  
+- **Monthly Support Hours** per plan: e.g., Basic = 2 hrs, Advanced = 5 hrs, Enterprise = 10 hrs.
+
+### **2.9. Periodicity Adjustments**
+
+If monthly or quarterly is chosen, all the above fields should either:  
+- auto-distribute (e.g., 6% quarterly → ~2% monthly growth), or  
+- let the user define monthly vs. quarterly growth directly.
+
+---
+
+## **3. PLANS & PRICING DETAILS**
+
+Use the following **default** (all must be editable in the final dashboard):
+
+| **Plan**       | **Monthly COS** | **Setup COS** | **Monthly Selling Price** | **Setup Selling Price** |
+| -------------- | --------------- | ------------ | ------------------------- | ----------------------- |
+| **Basic**      | R4,268          | R6,000       | R9,869                   | R7,800                 |
+| **Advanced**   | R9,445          | R15,600      | R21,709                  | R19,200                |
+| **Enterprise** | R49,026         | R31,200      | R94,587                  | R45,600                |
+
+#### **White Label Example**  
+- *Basic White Label Setup COS*: R2,000  
+- *Basic White Label Monthly Selling*: R12,600  
+
+*(Add as many White Label plan types as needed.)*
+
+#### **Overages**  
+- **Messages**:  
+  - *COS*: R0.04/msg  
+  - *Selling*: R0.06/msg  
+- **Minutes**:  
+  - *COS*: R2.22/min  
+  - *Selling*: ~R3.33/min  
+
+> **Note**: Overages must be automatically calculated if usage surpasses the included allotment per plan (you can define or assume an included limit, e.g., 5,000 messages or 100 minutes, etc.).
+
+---
+
+## **4. STAFFING DETAILS**
+
+There are two categories:
+
+### **4.1. Non-Scaling (Fixed) Staff**
+
+| **Role**               | **Default Headcount** | **Base Monthly Salary** | **Annual Raise** | **Notes**                                 |
+|------------------------|-----------------------|-------------------------|------------------|-------------------------------------------|
+| CEO                    | 1                     | R80,000                | 5%               | Strategy, investor relations              |
+| CTO                    | 1                     | R70,000                | 5%               | Tech roadmap, AI architecture            |
+| CFO                    | 1                     | R65,000                | 5%               | Finance, compliance                       |
+| Admin / Office Manager | 1                     | R18,000                | 5%               | Scheduling, office management, basic ops  |
+
+> These do not auto-scale with new clients.
+
+### **4.2. Scaling (Capacity-Driven) Staff**
+
+| **Role**                     | **Default Headcount** | **Base Monthly Salary** | **Annual Raise** | **Capacity (hrs/mo)** | **Notes**                                |
+|----------------------------- |-----------------------|-------------------------|------------------|-----------------------|------------------------------------------|
+| Onboarding Specialist        | 2                     | R25,000                | 5%               | 160                   | Guides new client setup & training       |
+| Technical Support Specialist | 1                     | R30,000                | 5%               | 160                   | Ticket handling, troubleshooting         |
+| ML/AI Engineer               | 2                     | R50,000                | 5%               | 160 (approx.)        | Maintains AI models, data pipelines      |
+| Full-Stack Dev               | 1                     | R40,000                | 5%               | 160                   | Front-end/back-end dev                   |
+| QA Engineer                  | 1                     | R30,000                | 5%               | 160                   | Software testing, release QA             |
+
+#### **Auto-Scaling Logic**  
+- *Total Onboarding Hours needed per period* + *Total Support Hours* = **Total Hours**.  
+- If **Total Hours** > (Available staff × 160 hrs each), **new staff** must be hired.  
+  - The cost for **each** new staff member is that role’s monthly salary × (1 + raise factor each year if time passes).  
+  - At a minimum, let the user choose if staff are “rounded up” with `ceil()`.
+
+---
+
+## **5. OVERHEADS & OTHER OPERATIONAL COSTS**
+
+**Default** monthly overhead items (annual 5% inflation):
+
+| **Item**                   | **Monthly Cost** | **Annual Increase** | **Notes**                              |
+|----------------------------|------------------|---------------------|----------------------------------------|
+| Office Rent & Utilities    | R40,000         | 5%                  | Tied to inflation each year            |
+| Cloud Hosting / Tools      | R20,000         | 5%                  | AI compute, SaaS subscriptions         |
+| Other Admin Overheads      | R10,000         | 5%                  | Insurance, legal, etc.                |
+| External Sales/Marketing   | R120,000        | 5%                  | If using an external agency retainer   |
+
+**Marketing Budget**  
+- Either a **fixed** monthly budget or a **% of revenue**.  
+- Default example: 0% or R0 if you want to keep it separate from the agency retainer.
+
+*(All overhead items must be **editable** via the admin panel.)*
+
+---
+
+## **6. GROWTH, CHURN & CLIENT DISTRIBUTION**
+
+### **6.1. Growth Rates**
+
+- **Default** scenario: *Quarterly Growth* = 6%  
+- **Optimistic**: 8–10% quarterly  
+- **Rapid AI**: 12–15% quarterly  
+
+*(If monthly detail is used, convert or let the user specify monthly growth directly.)*
+
+### **6.2. Churn**
+
+- **Default**: 10% annual (which can be ~0.83% monthly if monthly detail is used, or 2.5% quarterly if quarterly is used).  
+- The user must be able to override or set a different churn per scenario.
+
+### **6.3. Client Distribution (Plan Mix)**
+
+- **Basic**: 40% of new signups  
+- **Advanced**: 35%  
+- **Enterprise**: 25%  
+
+*(If White Label is relevant, add it as well, e.g., 5% to White Label, which reduces the other plan allocations proportionally.)*
+
+### **6.4. Initial Clients**
+
+- **Total**: 10 (4 Basic, 3 Advanced, 3 Enterprise).  
+- The user can override these in the admin panel.
+
+---
+
+## **7. FUNDING & INVESTMENT ROUNDS**
+
+### **7.1. Equity vs. Loan**  
+- **Equity**: no repayment; the money goes into Ending Cash. Possibly changes ownership % (cap table).  
+- **Loan**: track principal, interest rate, payback schedule (could be monthly, quarterly, yearly, or a lump sum after X years).
+
+### **7.2. Example: PSG Round**  
+- **Round Name**: “PSG Investment”  
+- **Timing**: Year 1, Q4 (or any custom date)  
+- **Amount**: R10,000,000  
+- **Equity**: 8% stake, no payback (adds R10M to “Ending Cash”).  
+
+*(The admin can add more rounds, like Series A, B, etc.)*
+
+### **7.3. Additional Fields**  
+- **Pre-Money Valuation**  
+- **Post-Money Valuation**  
+- **Ownership %** gained by new investor  
+- **Loan Terms** (if it’s not equity)  
+
+*(All these details feed into the cash flow statement and (optionally) a “Cap Table” section.)*
+
+---
+
+## **8. SAAS & FINANCIAL CALCULATIONS**
+
+**All these formulas must be implemented.**  
+
+### **8.1. Total Clients Calculation**
+
+In each period (Month / Quarter / Year):  
+1. **Starting Clients** = Previous Ending Clients.  
+2. **New Clients** = (Starting Clients × Growth Rate).  
+3. **Churned Clients** = (Starting Clients × Churn Rate).  
+4. **Ending Clients** = Starting + New – Churned.  
+
+*(Adjust for monthly/quarterly nuance; distribution of new clients across plans, etc.)*
+
+### **8.2. Plan-Level Revenue**
+
+- **Subscription Revenue** = (Avg. # of clients in each plan × Monthly Price) × # of months in period.  
+  - If annual: simply (# of clients × annual price).  
+- **Setup Fees** = (# of new signups in each plan × plan’s setup fee).  
+- **Overage Revenue** = (overage usage × overage selling price) → If you track usage.
+
+### **8.3. Cost of Sales (COS)**
+
+- **Plan COS** = (# of clients in each plan × plan’s monthly COS) + (new signups × setup COS).  
+- **Overage COS** = (overage usage × overage cost).
+
+### **8.4. Operating Expenses**
+
+1. **Staff Costs** = Sum of all salaries (scaling + fixed).  
+   - For scaling staff, if you needed more staff, multiply the new total headcount by the monthly salary.  
+   - Factor in annual raises.  
+2. **Overheads** (office, cloud, admin, etc.) – inflated by 5% yearly.  
+3. **Marketing** (fixed or % of revenue).
+
+### **8.5. EBITDA & Net Income**
+
+1. **Gross Profit** = Revenue – COS  
+2. **EBITDA** = Gross Profit – Operating Expenses  
+3. **Tax** = EBITDA × Corporate Tax Rate  
+4. **Net Income** = EBITDA – Tax
+
+### **8.6. Cash Flow & Ending Cash**
+
+1. **Beginning Cash** (start of period)  
+2. **+ Net Income**  
+3. **+ Funding Inflows** (equity or loan)  
+4. **– Loan Repayment / Interest** (if applicable)  
+5. **= Ending Cash**  
+
+*(Carry the Ending Cash to the next period’s Beginning Cash.)*
+
+### **8.7. SaaS Metrics**
+
+1. **MRR**: If monthly detail, sum up monthly recurring revenue.  
+2. **ARR**: 12 × MRR (if monthly) or 4 × QRR (if quarterly).  
+3. **CAC** = (Marketing + sales cost) / new clients.  
+4. **LTV** = (Average monthly revenue per client – COS per client) ÷ monthly churn rate.  
+5. **Payback Period** = CAC ÷ monthly net margin per new client.  
+6. **Staff-to-Client Ratio** = # of staff in a certain role / # of total clients (or by plan if needed).
+
+---
+
+## **9. DATA TABLES, CHARTS & VISUALIZATIONS**
+
+### **9.1. Required Data Tables**  
+1. **Year-by-Year (or period-by-period) Table**:  
+   - Starting Clients, New Clients, Churned, Ending Clients  
+   - Plan mix (# in Basic, # in Advanced, etc.)  
+   - Revenue by plan, COS by plan, Overages, etc.  
+   - Staff count (by role), staff cost, overhead, marketing, total OPEX  
+   - EBITDA, Tax, Net Income, Funding, Ending Cash  
+
+*(The user should be able to expand to monthly or quarterly detail if chosen.)*
+
+### **9.2. KPI Cards**  
+- MRR / ARR  
+- Net Income  
+- EBITDA Margin (%)  
+- Ending Cash  
+- LTV  
+- CAC  
+- Payback Period  
+- Staff-to-Client Ratio  
+
+### **9.3. Charts**  
+1. **Revenue vs. Operating Expenses** (over time)  
+2. **Client Growth vs. Staff Growth**  
+3. **Ending Cash** (cash flow line chart)  
+4. **Scenario Comparison** (e.g., Base vs. Rapid AI side-by-side)  
+
+### **9.4. Export Options**  
+- **CSV / Excel**: export the raw table  
+- **PDF**: summary with charts & tables  
+
+---
+
+## **10. SCENARIO ANALYSIS & PRESET PROFILES**
+
+- **Scenario Presets** (Base, Optimistic, Rapid AI): each has a preset Growth Rate, Churn Rate, Marketing %, etc.  
+- **Admin-Defined**: The admin can add new scenarios (e.g., “Partner Collaboration Scenario” with different revenue share, or “High Churn Scenario”).  
+- **Comparison**: Ability to compare at least **two** scenarios side by side in the same dashboard or in an export.
+
+---
+
+## **11. DASHBOARD STRUCTURE & NAVIGATION**
+
+A **suggested** structure (all must be flexible in final build):
+
+1. **Home / Executive Summary**  
+   - Quick KPIs (MRR, ARR, Net Income, Staff, etc.).  
+   - Main charts (Revenue vs. Opex, Ending Cash).  
+
+2. **Assumptions / Inputs**  
+   - **Tab 1**: **Global / Financial** (tax rate, inflation, projection horizon, initial cash, funding rounds).  
+   - **Tab 2**: **Plans & COS** (pricing, setup fees, overages).  
+   - **Tab 3**: **Staff & Overheads** (roles, salaries, overhead items, marketing, etc.).  
+   - **Tab 4**: **Growth & Churn** (quarterly growth, churn, distribution, initial clients).  
+   - **Tab 5**: **Onboarding & Support** (hours, auto-scaling logic).  
+
+3. **Scenarios**  
+   - Buttons or dropdown for “Base,” “Optimistic,” “Rapid AI,” or custom.  
+
+4. **Projections**  
+   - Dynamic table that updates based on inputs.  
+   - Show staff expansions, revenue, net income, etc.  
+
+5. **Comparisons & Exports**  
+   - Compare scenario A vs. B.  
+   - Export to CSV/Excel/PDF.  
+
+---
+
+## **12. FINAL DELIVERABLES**
+
+1. **Streamlit Application**  
+   - A fully working dashboard with **all** inputs described above.  
+   - Real-time or near real-time recalculations.  
+
+2. **Source Code**  
+   - Organized into modules (e.g., `ui.py`, `calculations.py`, `config.py`).  
+   - Thoroughly commented.  
+   - Include `requirements.txt` or environment file.  
+
+3. **Documentation**  
+   - **README** explaining how to install, run, and update the app.  
+   - Explanation of each input tab, how staff hours are calculated, how churn is applied, etc.  
+
+4. **Testing / Validation**  
+   - Basic unit tests or at least a checklist ensuring each formula is correct.  
+
+5. **Sample Data**  
+   - Optionally provide a sample scenario or seed data file, so users can see an example.  
+
+---
+
+## **13. VALIDATION & TESTING NOTES**
+
+- **Edge Cases**:
+  1. **0% Growth** or negative churn.  
+  2. **Sky-high** growth (100% monthly).  
+  3. **No Overheads** or no staff.  
+  4. **No Funding** vs. multiple large rounds.  
+  5. **Churn > Growth** leading to negative client counts (should be bounded at zero).  
+- **Performance**:  
+  - Monthly projections for 10 years = 120 periods. Ensure performance is acceptable.  
+- **Data Consistency**:  
+  - If user changes the period type (e.g., from annual to monthly), recalculate or re-interpret the growth/churn rates carefully.  
+- **Scenario Testing**:  
+  - Confirm scenario toggles instantly recalculate tables & charts.  
+
+---
+
+# **PUTTING IT ALL TOGETHER**
+
+By following this **ultra-detailed** specification, the Streamlit-based Financial & Operational Dashboard will have:
+
+1. **A Full Admin Panel** with **all** inputs: from salaries, overhead, growth, churn, plan pricing, to funding details.  
+2. **Real-Time Breakdown** of financial statements and SaaS metrics each period (monthly/quarterly/annual).  
+3. **Auto-Scaling Staff Logic** based on onboarding/support hours.  
+4. **Funding Rounds** for equity or debt, each properly impacting the Ending Cash (and optionally ownership).  
+5. **Scenario Analysis** for multiple growth/churn assumptions with side-by-side comparisons.  
+6. **Charts & Tables** for at-a-glance insights and deeper financial detail.  
+
+Every single value shown here (like R4,268 for Basic COS, 160 hours staff capacity, 5% inflation, 10% churn, 6% growth, etc.) **must** appear as editable fields in the final application. The user must be able to override them, and your code should reference them dynamically rather than hard-coding.
+
+**End of Brief**  

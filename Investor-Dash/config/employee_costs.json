@@ -1,0 +1,114 @@
+{
+    "C-Level Management": {
+        "CEO - RCS Executive": {
+            "annual_salary": 1200000,
+            "annual_increase_pct": 5
+        },
+        "CTO - RCS Executive": {
+            "annual_salary": 1100000,
+            "annual_increase_pct": 5
+        },
+        "CMO - RCS Executive": {
+            "annual_salary": 1000000,
+            "annual_increase_pct": 5
+        }
+    },
+    "Operational Management": {
+        "Operations Manager": {
+            "annual_salary": 600000,
+            "annual_increase_pct": 5
+        },
+        "Sales & Marketing Manager": {
+            "annual_salary": 650000,
+            "annual_increase_pct": 5
+        },
+        "Accountant": {
+            "annual_salary": 400000,
+            "annual_increase_pct": 5
+        }
+    },
+    "R&D / Development / Technical Support Management": {
+        "Full Stack Developer": {
+            "annual_salary": 550000,
+            "annual_increase_pct": 5
+        },
+        "Cloud Infrastructure Engineer": {
+            "annual_salary": 700000,
+            "annual_increase_pct": 5
+        },
+        "Chief Product Officer (CPO)": {
+            "annual_salary": 900000,
+            "annual_increase_pct": 5
+        },
+        "Development Operations Engineer (DEV OP)": {
+            "annual_salary": 650000,
+            "annual_increase_pct": 5
+        },
+        "Programmer - UI & UX Designer": {
+            "annual_salary": 500000,
+            "annual_increase_pct": 5
+        },
+        "AI Machine Learning Engineer (AI/ML)": {
+            "annual_salary": 900000,
+            "annual_increase_pct": 5
+        },
+        "Technical Support Programmers": {
+            "annual_salary": 450000,
+            "annual_increase_pct": 5
+        }
+    },
+    "Tech - Soft & Hardware": {
+        "Software Subscriptions": {
+            "annual_salary": 100000,
+            "annual_increase_pct": 10
+        },
+        "Software": {
+            "annual_salary": 100000,
+            "annual_increase_pct": 10
+        }
+    },
+    "Operations": {
+        "Office Rental": {
+            "annual_salary": 360000,
+            "annual_increase_pct": 6
+        },
+        "Communications": {
+            "annual_salary": 120000,
+            "annual_increase_pct": 6
+        },
+        "Administration": {
+            "annual_salary": 240000,
+            "annual_increase_pct": 6
+        },
+        "Insurance": {
+            "annual_salary": 100000,
+            "annual_increase_pct": 6
+        },
+        "Logistics": {
+            "annual_salary": 120000,
+            "annual_increase_pct": 6
+        },
+        "Transport": {
+            "annual_salary": 90000,
+            "annual_increase_pct": 6
+        },
+        "Legal": {
+            "annual_salary": 100000,
+            "annual_increase_pct": 6
+        },
+        "Sundry": {
+            "annual_salary": 50000,
+            "annual_increase_pct": 6
+        }
+    },
+    "Variable Roles": {
+        "Onboarding Specialist": {
+            "monthly_salary": 25000,
+            "annual_increase_pct": 5
+        },
+        "Technical Support Manager": {
+            "monthly_salary": 30000,
+            "annual_increase_pct": 5
+        }
+    }
+}

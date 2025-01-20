@@ -1,0 +1,20 @@
+{
+    "Basic": {
+        "base_messages": 5000,
+        "base_minutes": 300,
+        "cost_per_additional_message": 0.09,
+        "cost_per_additional_minute": 3.33
+    },
+    "Advanced": {
+        "base_messages": 10000,
+        "base_minutes": 500,
+        "cost_per_additional_message": 0.07,
+        "cost_per_additional_minute": 3.00
+    },
+    "Enterprise": {
+        "base_messages": 60000,
+        "base_minutes": 6000,
+        "cost_per_additional_message": 0.05,
+        "cost_per_additional_minute": 2.50
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice {{ invoiceNumber }}</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="https://menkoff.com/assets/brand-sample.png" alt="Company Logo" />
+      </div>
+      <div class="invoice-details">
+        <p>Date: {{ invoiceDate }}</p>
+        <p>Invoice #: {{ invoiceNumber }}</p>
+      </div>
+    </header>
+
+    <section class="billing-info">
+      <div class="supplier">
+        <p class="bold">Supplier Company INC</p>
+        <p>Number: 23456789</p>
+        <p>VAT: 23456789</p>
+        <p>6622 Abshire Mills</p>
+        <p>Port Orlofurt, 05820</p>
+        <p>United States</p>
+      </div>
+      <div class="customer">
+        <p class="bold">{{ customer.company }}</p>
+        <p>Number: {{ customer.number }}</p>
+        <p>VAT: {{ customer.vat }}</p>
+        <p>{{ customer.address1 }}</p>
+        <p>{{ customer.city }}, {{ customer.postCode }}</p>
+        <p>{{ customer.country }}</p>
+      </div>
+    </section>
+
+    <section class="products">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product Details</th>
+            <th>Price</th>
+            <th>Qty.</th>
+            <th>VAT</th>
+            <th>Subtotal</th>
+            <th>Subtotal + VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for product in products %}
+          <tr>
+            <td>{{ loop.index }}.</td>
+            <td>{{ product.name }}</td>
+            <td>{{ currencySymbol }}{{ "%.2f"|format(product.price) }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.vat }}%</td>
+            <td>{{ currencySymbol }}{{ "%.2f"|format(product.price * product.quantity) }}</td>
+            <td>{{ currencySymbol }}{{ "%.2f"|format(product.price * product.quantity * (1 + product.vat / 100)) }}</td>
+          </tr>
+          {% endfor %}
+          <tr class="totals">
+            <td colspan="5"></td>
+            <td>Net Total:</td>
+            <td>{{ currencySymbol }}{{ "%.2f"|format(net_total) }}</td>
+          </tr>
+          <tr class="totals">
+            <td colspan="5"></td>
+            <td>VAT Total:</td>
+            <td>{{ currencySymbol }}{{ "%.2f"|format(vat_total) }}</td>
+          </tr>
+          <tr class="totals">
+            <td colspan="5"></td>
+            <td class="bold">Total:</td>
+            <td class="bold">{{ currencySymbol }}{{ "%.2f"|format(total_with_vat) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="payment-details">
+      <p class="bold">PAYMENT DETAILS</p>
+      <p>Banks of Banks</p>
+      <p>Bank/Sort Code: 1234567</p>
+      <p>Account Number: 123456678</p>
+      <p>Payment Reference: {{ invoiceNumber }}</p>
+    </section>
+
+    <section class="notes">
+      <p class="bold">Notes</p>
+      <p class="italic">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries
+        for previewing layouts and visual mockups.</p>
+    </section>
+
+    <footer>
+      Supplier Company
+      <span>|</span>
+      info@company.com
+      <span>|</span>
+      +1-202-555-0106
+    </footer>
+  </div>
+</body>
+
+</html>
